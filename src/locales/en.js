@@ -12,8 +12,18 @@ const en = {
     },
     header: {
         logoText: "Kunz\nManufaktur",
-        orderButton: "Order Flowers"
+        orderButton: "Order Flowers",
+    },
+    heading: {
+        maintext: 'Flowers, just when you need them',
+        text: 'Individual flower subscriptions, workshops, and home visits - throughout Switzerland',
+    },
+    hero: {
+        buttontext1: 'Order flowers',
+        buttontext2: 'view our services',
     }
+
+
 }
 
 export default en

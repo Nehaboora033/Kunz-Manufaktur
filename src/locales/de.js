@@ -13,7 +13,19 @@ const de = {
     header: {
         logoText: "Kunz\nManufaktur",
         orderButton: "Blumen bestellen"
+    },
+    heading: {
+        maintext: 'Blumen, genau wenn Sie sie brauchen',
+        text: 'Individuelle Blumenabonnements, Workshops und Hausbesuche - in der ganzen Schweiz.',
+    },
+
+    hero: {
+        buttontext1: 'Blumen bestellen',
+        buttontext2: 'Unsere Dienstleistungen ansehen',
     }
+
+
+
 }
 
 export default de

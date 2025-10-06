@@ -58,7 +58,7 @@ const Header = () => {
                         </button>
                     </div>
                     <div className='flex items-center'>
-                        <Button className="sm:!py-[16px]  sm:w-[182px] sm:h-[52px] max-sm:px-3  ">
+                        <Button className="sm:!py-[16px]  sm:w-[182px] sm:h-[52px] max-sm:px-3 bg-green  text-white ">
                             {t('header.orderButton')}
                         </Button>
                         <button
