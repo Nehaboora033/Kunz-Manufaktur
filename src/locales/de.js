@@ -22,7 +22,11 @@ const de = {
     hero: {
         buttontext1: 'Blumen bestellen',
         buttontext2: 'Unsere Dienstleistungen ansehen',
-    }
+    },
+    footer: {
+        text: 'Florale Beratung & Blumenabonnements in der ganzen Schweiz mit Herz. Seit 2014 bringen wir die Schönheit der Natur in Ihre Räume.',
+        copyright: '© 2025 Kunz Manufaktur. Alle Rechte vorbehalten.',
+    },
 
 
 

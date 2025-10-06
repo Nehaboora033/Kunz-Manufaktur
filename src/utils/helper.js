@@ -28,7 +28,7 @@ export const CardsData = [
     },
     {
         id: '2',
-        icon: Flower ,
+        icon: Flower,
         key: 'Blumen-Abonnement',
         data: 'Regelmäßige Lieferungen frischer, saisonaler Arrangements. Wählen Sie Ihre Größe, Häufigkeit und Stilpräferenzen für ein wirklich personalisiertes Erlebnis.',
         buttontext: 'Ein Abonnement starten',
@@ -88,3 +88,54 @@ export const CardsData = [
     },
 
 ]
+
+export const Footer_Links = [
+    {
+        text: 'Persönliche Beratung',
+        link: '/',
+    },
+    {
+        text: 'Blumen-Abonnement',
+        link: '/',
+    },
+    {
+        text: 'Workshops',
+        link: 'workshops',
+    },
+    {
+        text: 'Über uns',
+        link: 'uber',
+    },
+
+]
+
+export const Footer_contactInfo = [
+    {
+        text: "Musterstraße 123 8000 Zürich",
+        href: '',
+    },
+    {
+        text: " + 41 79 123 45 67",
+        href: 'tel:+41791234567',
+    },
+    {
+        text: "Schreiben Sie uns",
+        href: '',
+    },
+
+]
+
+export const Footer_Info = [
+    {
+        text: "Mo-Fr: 08:00 - 18:00",
+    },
+    {
+        text: 'Sa: 09:00 - 16:00',
+    },
+    {
+        text: 'So: Nur nach Vereinbarung',
+    },
+]
+
+
+

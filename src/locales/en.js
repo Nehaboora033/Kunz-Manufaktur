@@ -21,8 +21,11 @@ const en = {
     hero: {
         buttontext1: 'Order flowers',
         buttontext2: 'view our services',
-    }
-
+    },
+    footer: {
+        text: 'Florale ',
+        copyright: '© 2025  hello.',
+    },
 
 }
 
