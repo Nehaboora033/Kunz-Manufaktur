@@ -6,6 +6,10 @@ import image4 from '../assets/webp/image4.webp'
 import image5 from '../assets/webp/image5.webp'
 import image6 from '../assets/webp/image6.webp'
 import image7 from '../assets/webp/image7.webp'
+import swiperimg1 from '../assets/webp/swiperimg1.webp'
+import swiperimg2 from '../assets/webp/swiperimg2 .webp'
+import swiperimg3 from '../assets/webp/swiperimg3.webp'
+import swiperimg4 from '../assets/webp/swiperimg4.webp'
 
 export const Navlinks = [
     { key: 'nav.home', link: '/' },
@@ -139,3 +143,6 @@ export const Footer_Info = [
 
 
 
+export const Projekte_Data = [
+    swiperimg1, swiperimg2, swiperimg3, swiperimg4, swiperimg1, swiperimg2, swiperimg3, swiperimg4
+]

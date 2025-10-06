@@ -11,7 +11,7 @@ const Footer = () => {
   return (
     <div className='bggreen py-[40px]'>
       <div className='text-white max-w-[1865px] mx-auto px-3'>
-        <div className='flex gap-[40px] '>
+        <div className='flex justify-between flex-wrap gap-y-[40px] '>
           <div className='max-w-[500px] w-full'>
             <div className='flex gap-4 items-center mb-8'>
               <FooterLogo />
