@@ -16,6 +16,9 @@
     --color-black: #111111;
     --shadow-card: 0px 165px 99px 0px #ACADAA0D;
     --gradient-hero: linear-gradient(180deg, #ECF1EE 0%, #FAFAFA 131.85%);
+    --gradinet-box: linear-gradient(90deg, #ECF1EE -17.27%, #FAFAFA 100%);
+    --shadow-box: 0px 293px 117px rgba(172, 173, 170, 0.01), 0px 165px 99px rgba(172, 173, 170, 0.05);
+
 }
 
 .black {
@@ -41,4 +44,12 @@
 
 .herogradient {
     background: var(--gradient-hero);
+}
+
+.boxgradient {
+    background: var(--gradinet-box);
+}
+
+.after-img::after {
+    background-image: url(assets/png/greyflower.png);
 }

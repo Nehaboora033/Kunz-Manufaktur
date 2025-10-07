@@ -59,8 +59,16 @@ const de = {
     swiper: {
         title: 'Aktuelle Projekte',
         data: 'Ein Einblick in die floralen Geschichten, die wir geschaffen haben - jede persönlich, saisonal und voller Seele.',
-    }
+    },
+    journey: {
+        title: 'Bereit, Ihre florale Reise zu erkunden?',
+        data: 'Egal, ob Sie eine einmalige Beratung oder ein fortlaufendes Abonnement suchen, wir sind hier, um Ihre Vision mit persönlicher Betreuung und Aufmerksamkeit zum Leben zu erwecken.'
+    },
 
+    journeybutton: {
+        buttontext1: 'Beratung planen',
+        buttontext2: 'Abonnements erkunden',
+    }
 
 
 }

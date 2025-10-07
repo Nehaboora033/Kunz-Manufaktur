@@ -51,8 +51,7 @@ line-height: 20px;
 
 /* Lorem ipsum dolor sit amet consectetur. Ridiculus viverra lectus ullamcorper nisi est malesuada purus auctor. Dictumst magna ipsum gravida donec montes sagittis diam ut pharetra. Tortor felis volutpat viverra imperdiet nullam condimentum. Quam porttitor porttitor at rhoncus. */
 
-width: 1280px;
-height: 30px;
+
 
 /* Typgraphy/H4 */
 font-family: 'Plus Jakarta Sans';
@@ -65,8 +64,5 @@ text-align: center;
 color: #111111;
 
 
-/* Inside auto layout */
-flex: none;
-order: 1;
-align-self: stretch;
-flex-grow: 0;
+
+

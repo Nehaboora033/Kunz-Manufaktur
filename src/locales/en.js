@@ -58,8 +58,17 @@ const en = {
     swiper: {
         title: 'Current projects',
         data: 'A glimpse into the floral stories we have created—each personal, seasonal, and soulful.images',
-    }
+    },
 
+    journey: {
+        title: 'Ready to explore your floral journey?',
+        data: 'Whether you are looking for a one-time consultation or an ongoing subscription, we are here to bring your vision to life with personalized care and attention.'
+    },
+
+    journeybutton: {
+        buttontext1: 'Plan Consultation',
+        buttontext2: 'Explore Subscriptions',
+    }
 }
 
 export default en

@@ -14,7 +14,7 @@ function App() {
       <main className='mt-[100px]'>
         <Outlet />
       </main>
-      <Footer />
+      {/* <Footer /> */}
       {/* <BackToTop /> */}
 
     </>
