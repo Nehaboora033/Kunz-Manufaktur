@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Title = ({ className, children }) => {
+const SectionText = ({ className, children }) => {
     return (
         <h4 className={`${className} font-normal leading-[30px] text-[24px] `}>
             {children}
@@ -9,4 +9,4 @@ const Title = ({ className, children }) => {
     )
 }
 
-export default Title
+export default SectionText

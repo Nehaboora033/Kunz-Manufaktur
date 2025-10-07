@@ -66,3 +66,25 @@ color: #111111;
 
 
 
+/* Full Name */
+
+width: 149px;
+height: 20px;
+
+/* Typgraphy/Label */
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+
+color: #111111;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+

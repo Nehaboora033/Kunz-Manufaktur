@@ -5,7 +5,6 @@ import { useTranslation } from 'react-i18next'
 import Button from './common/Button'
 import { GreenArrow, WhiteArrow } from '../utils/icons'
 import flower from '../assets/webp/flowerhero.webp'
-import Title from './common/Title'
 
 const Hero = () => {
   const { t } = useTranslation()

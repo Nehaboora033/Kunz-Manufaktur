@@ -38,9 +38,11 @@ const de = {
 
     linkcontact: {
         title: 'Kontakte',
-        name: 'Musterstrasse 1238000 Zürich',
+        name: 'Musterstraße 123',
+        address: '8000 Zurich',
         tel: '+41791234567',
-        contact: 'Schreiben Sie uns'
+        contact: 'Schreiben Sie uns',
+        email: 'sandra@kunz-manufaktur.ch',
     },
     linkopening: {
         title: 'Öffnungszeiten',
@@ -68,6 +70,30 @@ const de = {
     journeybutton: {
         buttontext1: 'Beratung planen',
         buttontext2: 'Abonnements erkunden',
+    },
+    talk: {
+        title: " Lass uns über Blumen sprechen",
+        data: ' Ob es eine Frage oder eine individuelle Beratung ist, wir helfen Ihnen gerne weiter.',
+        buttontext: 'Send Message',
+        name: 'Vollständiger Name',
+        mail: 'E-mail',
+        phonenumber: 'Telefonnummer',
+        interested: "Ich interessiere mich für:",
+    },
+    placeholder: {
+        fullname: 'z.B.: Max Mustermann',
+        email: 'z.B.: max@beispiel.com',
+    },
+    message: {
+        title: 'Teilen Sie Ihre Nachricht:',
+        text: 'Nachricht',
+    },
+    tabs: {
+        personal: 'Persönliche Beratung',
+        flower: 'Blumenabo',
+        workshop: 'Workshop-Buchung',
+        event: ' Eventblumen',
+        other: "Sonstiges",
     }
 
 

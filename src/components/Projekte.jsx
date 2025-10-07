@@ -1,13 +1,12 @@
 import React from 'react'
 import SubHeading from './common/subHeading'
-import Description from './common/Description'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Projekte_Data } from '../utils/helper'
 import 'swiper/css'
 import { Autoplay } from 'swiper/modules'
 import { useTranslation } from 'react-i18next'
-import Title from './common/Title'
 import Container from './common/Container'
+import SectionText from './common/SectionText'
 
 const Projekte = () => {
     const { t } = useTranslation();
@@ -17,9 +16,9 @@ const Projekte = () => {
                 <SubHeading className="text-center mb-6">
                     {t('swiper.title')}
                 </SubHeading>
-                <h2 className={'text-center black mb-[60px]  mx-auto font-normal leading-[30px] sm:text-[24px] text-[18px] '}>
+                <SectionText className={'text-center black mb-[60px]  mx-auto'}>
                     {t('swiper.data')}
-                </h2>
+                </SectionText>
             </Container>
 
             <div className="xl:ml-[160px] max-lg:px-3 max-xl:px-3">

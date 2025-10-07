@@ -1,4 +1,4 @@
-import { Dug, Flower, Heart } from "./icons"
+import { Dug, Facebook, Flower, Heart, Insta, Whatsup } from "./icons"
 import image1 from '../assets/webp/Image1.webp'
 import image2 from '../assets/webp/image2.webp'
 import image3 from '../assets/webp/image3.webp'
@@ -119,6 +119,10 @@ export const Footer_contactInfo = [
         href: '',
     },
     {
+        key: 'linkcontact.address',
+        href: '',
+    },
+    {
         key: 'linkcontact.tel',
         href: 'tel:+41791234567',
     },
@@ -156,4 +160,56 @@ export const Footer_DataLink = [
 
 export const Projekte_Data = [
     swiperimg1, swiperimg2, swiperimg3, swiperimg4, swiperimg1, swiperimg2, swiperimg3, swiperimg4
+]
+
+export const Talk_Contact = [
+    {
+        key: 'linkcontact.name',
+        href: '',
+    },
+    {
+        key: 'linkcontact.address',
+        href: '',
+    },
+    {
+        key: 'linkcontact.tel',
+        href: 'tel:+41791234567',
+    },
+    {
+        key: 'linkcontact.email',
+        href: 'mailto:sandra@kunz-manufaktur.ch',
+    },
+
+]
+
+export const Social_Links = [
+    {
+        icon: Whatsup,
+        link: 'https://web.whatsapp.com/',
+    },
+    {
+        icon: Facebook,
+        link: 'https://www.facebook.com/',
+    },
+    {
+        icon: Insta,
+        link: 'https://www.instagram.com/',
+    },
+]
+
+export const Tabs = [
+
+    { name: 'tabs.personal' },
+    {
+        name: 'tabs.flower',
+    },
+    {
+        name: 'tabs.workshop',
+    },
+    {
+        name: 'tabs.event',
+    },
+    {
+        name: 'tabs.other',
+    },
 ]
