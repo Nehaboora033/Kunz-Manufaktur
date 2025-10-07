@@ -4,7 +4,7 @@ const Input = ({ name, type, placeholder, value, onChange, className, label, err
     return (
         <div className='w-full relative'>
             {label && (
-                <label htmlFor={name} className="block font-normal text-[16px] leading-[20px] black">
+                <label htmlFor={name} className="block font-normal text-[16px] leading-[20px] text-black">
                     {label}
                 </label>
             )}
@@ -14,11 +14,10 @@ const Input = ({ name, type, placeholder, value, onChange, className, label, err
                 placeholder={placeholder}
                 value={value}
                 onChange={onChange}
-                style={{ '::placeholder': { color: '#454544' } }}
-                className={`rounded-[20px] border border-[#FFFFFF] py-3 px-4 w-full bg-white mt-[10px] ${error ? 'border-red-500' : 'border-[#E0E0E0]'} ${className}`}
+                className={`rounded-[20px] py-3 px-4 w-full bg-white mt-[10px] placeholder-[#454544] ${error ? 'border-red-500' : 'border-[#E0E0E0]'} border ${className} ${children ? 'pl-10' : ''}`}
             />
             {children && (
-                <div className="absolute inset-y-0 left-4 flex items-center pointer-events-none">
+                <div className="absolute inset-y-0 left-3 flex items-center pointer-events-none">
                     {children}
                 </div>
             )}

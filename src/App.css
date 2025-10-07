@@ -53,3 +53,27 @@
 .after-img::after {
     background-image: url(assets/png/greyflower.png);
 }
+
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.hide-scrollbar {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.react-tel-input .flag {
+    display: none !important;
+}
+
+.react-tel-input .selected-flag {
+    width: auto !important;
+    padding-left: 0 !important;
+}
+
+.react-tel-input .selected-flag .arrow {
+    margin-left: 4px !important;
+}
