@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { LogoIcon } from '../../utils/icons'
@@ -16,8 +16,17 @@ const Header = () => {
         localStorage.setItem('language', lang)
     }
 
+    const [scrolled, setScrolled] = useState(false);
+    useEffect(() => {
+        const handleScroll = () => {
+            setScrolled(window.scrollY > 10);
+        };
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+
     return (
-        <div className="">
+        <div className={` fixed top-0 z-20 w-full ${scrolled ? 'shadow-lg bg-white' : ''}`}>
             <div className="w-full max-w-[1840px] sm:px-3 px-2 mx-auto flex items-center justify-between py-6">
                 <Link to="/" className="flex items-center gap-4">
                     <LogoIcon />
@@ -68,7 +77,7 @@ const Header = () => {
                             <Hamburger
                                 toggled={state == 'show'}
                                 color="#3E7651"
-                                 size={32}  
+                                size={32}
                                 toggle={() => setIsOpen(state === 'show' ? null : 'show')} />
                         </button>
                     </div>

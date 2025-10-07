@@ -1,5 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import "tailwindcss";
+
+* {
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.poppins {
+    font-family: "Poppins", sans-serif;
+}
 
 @theme {
     --color-green: #3E7651;
@@ -8,10 +16,6 @@
     --color-black: #111111;
     --shadow-card: 0px 165px 99px 0px #ACADAA0D;
     --gradient-hero: linear-gradient(180deg, #ECF1EE 0%, #FAFAFA 131.85%);
-}
-
-.jakarta {
-    font-family: "Plus Jakarta Sans", sans-serif;
 }
 
 .black {

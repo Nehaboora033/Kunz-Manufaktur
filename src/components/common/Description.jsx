@@ -2,9 +2,9 @@ import React, { Children } from 'react'
 
 const Description = ({ children, className }) => {
     return (
-        <p className={`${className} font-normal text-[16px] leading-[100%]`}>
+        <h4 className={`${className} font-normal text-[20px] leading-[25px] `}>
             {children}
-        </p>
+        </h4>
     )
 }
 

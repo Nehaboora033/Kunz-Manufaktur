@@ -7,7 +7,7 @@ const Startseite = () => {
   return (
     <>
       <Hero />
-      <Unsere />
+      {/* <Unsere /> */}
       <Projekte />
     </>
   )

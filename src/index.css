@@ -1,0 +1,72 @@
+/* subheading */
+
+font-style: normal;
+font-weight: 600;
+font-size: 48px;
+line-height: 72px;
+
+text-align: center;
+
+color: #3E7651;
+
+
+/* title */
+/* Typgraphy/H4 */
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 30px;
+text-align: center;
+
+color: #111111;
+
+
+
+
+/* footer text */
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+
+color: #FFFFFF;
+
+
+
+
+/* button text */
+
+width: 134px;
+height: 20px;
+
+/* Typgraphy/Button Label */
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 20px;
+
+
+/* Lorem ipsum dolor sit amet consectetur. Ridiculus viverra lectus ullamcorper nisi est malesuada purus auctor. Dictumst magna ipsum gravida donec montes sagittis diam ut pharetra. Tortor felis volutpat viverra imperdiet nullam condimentum. Quam porttitor porttitor at rhoncus. */
+
+width: 1280px;
+height: 30px;
+
+/* Typgraphy/H4 */
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 30px;
+text-align: center;
+
+color: #111111;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;

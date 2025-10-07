@@ -28,6 +28,39 @@ const de = {
         copyright: '© 2025 Kunz Manufaktur. Alle Rechte vorbehalten.',
     },
 
+    linkservices: {
+        title: 'Dienstleistungen',
+        advice: 'Persönliche Beratung',
+        flower: 'Blumen-Abonnement',
+        workshops: 'Workshops',
+        about: 'Über uns',
+    },
+
+    linkcontact: {
+        title: 'Kontakte',
+        name: 'Musterstrasse 1238000 Zürich',
+        tel: '+41791234567',
+        contact: 'Schreiben Sie uns'
+    },
+    linkopening: {
+        title: 'Öffnungszeiten',
+        day: 'Mo-Fr: 08:00 - 18:00',
+        time: ' Sa: 09:00 - 16:00',
+        only: 'So: Nur nach Vereinbarung'
+
+    },
+
+    link: {
+        data: 'Datenschutz',
+        imprint: 'Impressum',
+        agb: 'AGB',
+
+    },
+    swiper: {
+        title: 'Aktuelle Projekte',
+        data: 'Ein Einblick in die floralen Geschichten, die wir geschaffen haben - jede persönlich, saisonal und voller Seele.',
+    }
+
 
 
 }

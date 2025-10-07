@@ -95,19 +95,19 @@ export const CardsData = [
 
 export const Footer_Links = [
     {
-        text: 'Persönliche Beratung',
+        key: 'linkservices.advice',
         link: '/',
     },
     {
-        text: 'Blumen-Abonnement',
+        key: 'linkservices.flower',
         link: '/',
     },
     {
-        text: 'Workshops',
+        key: 'linkservices.workshops',
         link: 'workshops',
     },
     {
-        text: 'Über uns',
+        key: 'linkservices.about',
         link: 'uber',
     },
 
@@ -115,15 +115,15 @@ export const Footer_Links = [
 
 export const Footer_contactInfo = [
     {
-        text: "Musterstraße 123 8000 Zürich",
+        key: 'linkcontact.name',
         href: '',
     },
     {
-        text: " + 41 79 123 45 67",
+        key: 'linkcontact.tel',
         href: 'tel:+41791234567',
     },
     {
-        text: "Schreiben Sie uns",
+        key: 'linkcontact.contact',
         href: '',
     },
 
@@ -131,16 +131,27 @@ export const Footer_contactInfo = [
 
 export const Footer_Info = [
     {
-        text: "Mo-Fr: 08:00 - 18:00",
+        key: 'linkopening.day',
     },
     {
-        text: 'Sa: 09:00 - 16:00',
+        key: 'linkopening.time',
     },
     {
-        text: 'So: Nur nach Vereinbarung',
+        key: 'linkopening.only',
     },
 ]
 
+export const Footer_DataLink = [
+    {
+        key: 'link.data',
+    },
+    {
+        key: 'link.imprint',
+    },
+    {
+        key: 'link.agb',
+    },
+]
 
 
 export const Projekte_Data = [
