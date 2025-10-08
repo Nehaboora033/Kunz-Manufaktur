@@ -159,7 +159,17 @@ const en = {
             location: "Kunz Studio, Munich",
             customer: "Max. 8 participants",
             button: "Book",
-        }
+        },
+        8: {
+            title: "Gifts",
+            description: "Custom-made floral arrangements for weddings, birthdays, corporate events or other special occasions.",
+            button: "Order Flowers"
+        },
+        9: {
+            title: "Event",
+            description: "Our charming flower cart brings the beauty of fresh flowers directly to your events, markets, and special occasions.",
+            button: "Book an Event"
+        },
 
     }
 

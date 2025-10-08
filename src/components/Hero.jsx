@@ -4,15 +4,15 @@ import Heading from './common/Heading'
 import { useTranslation } from 'react-i18next'
 import Button from './common/Button'
 import { GreenArrow, WhiteArrow } from '../utils/icons'
-import flower from '../assets/webp/flowerhero.webp'
+import Flower from './Flower'
 
 const Hero = () => {
   const { t } = useTranslation()
 
   return (
     <div className='herogradient'>
-      <Container className={'flex justify-center flex-col  '}>
-        <div className='md:py-[100px] py-[70px]'>
+      <Container className={'flex justify-center flex-col'}>
+        <div className='md:pt-[100px] pt-[70px] '>
           <Heading className={'mb-[32px]'}>
             {t('heading.maintext')}
           </Heading>
@@ -30,7 +30,7 @@ const Hero = () => {
             </Button>
           </div>
         </div>
-        <img src={flower} alt="flower" className='object-cover size-[661px] block mx-auto ' />
+        <Flower />
       </Container>
     </div>
   )

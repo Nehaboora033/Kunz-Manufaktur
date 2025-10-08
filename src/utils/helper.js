@@ -6,10 +6,14 @@ import image4 from '../assets/webp/image4.webp'
 import image5 from '../assets/webp/image5.webp'
 import image6 from '../assets/webp/image6.webp'
 import image7 from '../assets/webp/image7.webp'
+import image8 from '../assets/webp/image8.webp'
+import image9 from '../assets/webp/image9.webp'
+
 import swiperimg1 from '../assets/webp/swiperimg1.webp'
 import swiperimg2 from '../assets/webp/swiperimg2 .webp'
 import swiperimg3 from '../assets/webp/swiperimg3.webp'
 import swiperimg4 from '../assets/webp/swiperimg4.webp'
+
 
 export const Navlinks = [
     { key: 'nav.home', link: '/' },
@@ -90,6 +94,21 @@ export const CardsData = [
         customername: 'cards.7.customer',
         image: image7,
     },
+    {
+        id: '8',
+        title: 'cards.8.title',
+        data: 'cards.8.description',
+        buttontext: 'cards.8.button',
+        image: image8,
+    },
+    {
+        id: '9',
+        title: 'cards.9.title',
+        data: 'cards.9.description',
+        buttontext: 'cards.9.button',
+        image: image9,
+    },
+
 
 ]
 

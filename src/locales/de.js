@@ -145,7 +145,7 @@ const de = {
             description: "Erstellen Sie wunderschöne gepresste Blumenkunstwerke zum Mitnehmen. Alle Materialien und Rahmen sind enthalten.",
             date: '5. Oktober 2025',
             time: '15:00 - 17:00 Uhr',
-           location: "Kunz Studio, München",
+            location: "Kunz Studio, München",
             customer: "Max. 8 Teilnehmer",
             button: "Buchen",
         },
@@ -154,10 +154,20 @@ const de = {
             description: "Lernen Sie, wie man schöne Sträuße mit frischen Frühlingsblumen arrangiert.",
             date: '15. Oktober 2025',
             time: '14:00 - 17:00 Uhr',
-             location: "Kunz Studio, München",
+            location: "Kunz Studio, München",
             customer: "Max. 8 Teilnehmer",
             button: "Buchen",
-        }
+        },
+        8: {
+            title: "Gifts",
+            description: "Maßgeschneiderte Blumenarrangements für Hochzeiten, Geburtstage, Firmenveranstaltungen oder andere besondere Anlässe.",
+            button: "Blumen bestellen"
+        },
+        9: {
+            title: "Eventblumen",
+            description: "Unser charmanter Blumenwagen bringt die Schönheit frischer Blumen direkt zu Ihren Veranstaltungen, Märkten und besonderen Anlässen. ",
+            button: "Veranstaltung buchen"
+        },
 
     }
 }
