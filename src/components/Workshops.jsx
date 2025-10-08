@@ -7,9 +7,15 @@ import { CardsData } from '../utils/helper'
 import Description from './common/Description'
 import { Time, Dates, Location, Customer, WhiteArrow } from '../utils/icons'
 import Button from './common/Button'
+import {  useNavigate } from 'react-router-dom'
 
 const Workshops = () => {
     const { t } = useTranslation();
+    const navigate = useNavigate()
+
+    const handleCardClick = (id) => {
+        navigate(`/unsere/${id}`)
+    }
     const workshopCards = CardsData.filter(card =>
         ['4', '5', '6', '7'].includes(card.id)
     );
@@ -25,9 +31,9 @@ const Workshops = () => {
                 <div className='grid md:grid-cols-2 grid-cols-1 xl:gap-[40px] gap-[24px]'>
                     {workshopCards.map((item, index) => (
                         <div
-                            key={index}
-                            className='border border-[#ECF1EE] justify-between rounded-[40px] xl:p-6  p-3 overflow-hidden  flex flex-col  bg-white'
-                        >
+                            key={index} onClick={() => handleCardClick(item.id)}
+                            className='shadow-box border border-[#ECF1EE] justify-between rounded-[40px] xl:p-6  p-3 overflow-hidden  flex flex-col  bg-white'>
+
                             <img
                                 src={item.image}
                                 alt={item.key}

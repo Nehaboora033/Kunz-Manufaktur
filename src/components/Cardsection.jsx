@@ -6,9 +6,15 @@ import SectionText from './common/SectionText'
 import Description from './common/Description'
 import { WhiteArrow } from '../utils/icons'
 import Button from './common/Button'
+import {  useNavigate } from 'react-router-dom'
 
 const Cardsection = () => {
     const { t } = useTranslation();
+    const navigate = useNavigate()
+
+    const handleCardClick = (id) => {
+        navigate(`/unsere/${id}`)
+    };
     const TopCards = CardsData.filter((card) => card.id === '2' || card.id === '3');
     const DownCards = CardsData.filter((card) => card.id === '8' || card.id === '9');
     return (
@@ -17,7 +23,7 @@ const Cardsection = () => {
                 <div className='grid md:grid-cols-2 grid-cols-1 md:gap-[40px] gap-[24px]'>
                     {TopCards.map((item, index) => {
                         return (
-                            <div className='justify-between border border-[#ECF1EE] rounded-[40px] xl:p-6  p-3 overflow-hidden  flex flex-col  bg-white' key={index}>
+                            <div onClick={() => handleCardClick(item.id)} className='shadow-box justify-between border border-[#ECF1EE] rounded-[40px] xl:p-6  p-3 overflow-hidden  flex flex-col  bg-white' key={index}>
                                 <img
                                     src={item.image}
                                     alt={item.key}
@@ -46,8 +52,8 @@ const Cardsection = () => {
                 <div className='grid md:grid-cols-2 grid-cols-1 md:gap-[40px] gap-[24px] mt-[40px]'>
                     {DownCards.map((item) => (
                         <div
-                            key={item.id}
-                            className='border border-[#ECF1EE] justify-between rounded-[40px] xl:p-6 p-3 overflow-hidden flex flex-col bg-white'
+                            key={item.id} onClick={() => handleCardClick(item.id)}
+                            className='shadow-box border border-[#ECF1EE] justify-between rounded-[40px] xl:p-6 p-3 overflow-hidden flex flex-col bg-white'
                         >
                             <img
                                 src={item.image}

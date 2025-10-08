@@ -169,7 +169,15 @@ const de = {
             button: "Veranstaltung buchen"
         },
 
-    }
+    },
+    unorderlist: {
+        first: 'Hausbesuche',
+        second: '1-2-stündige Sitzungen',
+        third: 'Maßgeschneiderte Designs',
+        fourth: 'Stilberatung',
+        bottomtext: 'Wir besprechen Ihre Vorstellungen, begutachten Ihren Raum und erstellen einen individuellen Plan, der Ihre Blumenträume wahr werden lässt.',
+        toptexet: 'Jeder Raum hat seinen eigenen Charakter, und jeder Kunde hat individuelle Vorlieben.Unsere persönlichen Beratungsgespräche stellen sicher, dass Ihre Blumenarrangements perfekt zu Ihrer Umgebung und Ihrem Lebensstil passen.',
+    },
 }
 
 

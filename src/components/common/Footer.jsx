@@ -3,7 +3,7 @@ import { FooterLogo } from '../../utils/icons'
 import Description from './Description'
 import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
-import { Footer_contactInfo, Footer_DataLink, Footer_Info, Footer_Links } from '../../utils/helper'
+import {  Footer_contactInfo, Footer_DataLink, Footer_Info, Footer_Links } from '../../utils/helper'
 import Text from './Text'
 
 const Footer = () => {
@@ -11,7 +11,7 @@ const Footer = () => {
   return (
     <div className='bggreen py-[40px] mt-[100px] '>
       <div className='text-white max-w-[1865px] mx-auto px-3'>
-        <div className='flex flex-wrap gap-y-[40px]  '>
+        <div className='flex flex-wrap gap-[40px]  '>
           <div className='max-w-[500px] w-full'>
             <div className='flex gap-4 items-center mb-8'>
               <FooterLogo />
@@ -24,13 +24,10 @@ const Footer = () => {
               {t('footer.text')}
             </Text>
           </div>
-          <div className='flex-1 flex gap-[40px] '>
-            <div>
-              
-            </div>
+          <div className='flex-1 flex min-[1095px]:gap-[40px] gap-5 max-sm:flex-wrap'>
             {/* services */}
-            <div className='w-1/3'>
-              <Text className='!font-bold mb-[32px]'>
+            <div className='sm:w-1/3 min-[430px]:w-[48%] w-full '>
+              <Text className='!font-bold md:mb-[32px] mb-3'>
                 {t('linkservices.title')}
               </Text>
               {Footer_Links.map((item, index) => (
@@ -44,8 +41,8 @@ const Footer = () => {
               ))}
             </div>
             {/* contact */}
-            <div className='w-1/3'>
-              <Text className='!font-bold  mb-[32px]'>
+            <div className='sm:w-1/3  min-[430px]:w-[48%] w-full'>
+              <Text className='!font-bold  md:mb-[32px] mb-3'>
                 {t('linkcontact.title')}
               </Text>
               {Footer_contactInfo.map((item, index) => (
@@ -57,13 +54,13 @@ const Footer = () => {
               ))}
             </div>
             {/* opening time */}
-            <div className='w-1/3'>
-              <Text className='!font-bold  mb-[32px]'>
+            <div className='sm:w-1/3 min-[430px]:w-[46%] w-full '>
+              <Text className='!font-bold  md:mb-[32px] mb-3'>
                 {t('linkopening.title')}
               </Text>
               {Footer_Info.map((item, index) => (
                 <div className='mb-1' key={index} >
-                  <Text className={'whitespace-nowrap'}>
+                  <Text>
                     {t(item.key)}
                   </Text>
                 </div>
@@ -72,13 +69,13 @@ const Footer = () => {
           </div>
         </div>
         {/* copyright part  */}
-        <div className='mt-6 flex justify-between'>
+        <div className='mt-6 flex justify-between flex-wrap gap-y-[12px]'>
           <Text>
             {t('footer.copyright')}
           </Text>
-          <div className='flex items-center gap-[32px]'>
+          <div className='flex items-center md:gap-[32px] gap-[20px] flex-wrap'>
             {Footer_DataLink.map((item, index) => (
-              <Link key={index} className='underline underline-offset-3 font-normal text-[16px] leading-[20px]'>
+              <Link key={index} className='underline underline-offset-3 font-normal text-[16px] leading-[20px] whitespace-nowrap'>
                 {t(item.key)}
               </Link>
             ))}

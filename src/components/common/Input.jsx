@@ -14,7 +14,7 @@ const Input = ({ name, type, placeholder, value, onChange, className, label, err
                 placeholder={placeholder}
                 value={value}
                 onChange={onChange}
-                className={`rounded-[20px] py-3 px-4 w-full bg-white mt-[10px] placeholder-[#454544] ${error ? 'border-red-500' : 'border-[#E0E0E0]'} border ${className} ${children ? 'pl-10' : ''}`}
+                className={`rounded-[20px] py-3 px-4 w-full bg-white mt-[10px] placeholder-[#454544] ${error ? 'border-red-500' : 'border-[#FAFAFA]'} border ${className} ${children ? 'pl-10' : ''}`}
             />
             {children && (
                 <div className="absolute inset-y-0 left-3 flex items-center pointer-events-none">

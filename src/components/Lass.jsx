@@ -9,6 +9,7 @@ import Text from './common/Text'
 import flower from '../assets/webp/whiteflower.webp'
 import Button from './common/Button'
 import Input from './common/Input'
+import CountryInput from './common/CountryInput'
 
 const Lass = () => {
   const { t } = useTranslation()
@@ -100,10 +101,19 @@ const Lass = () => {
                   />
 
                   {/* Telephone input */}
-                  <Input
+                  {/* <Input
                     placeholder="+49 123456789"
                     type="tel"
                     label={t('talk.phonenumber')}
+                    name="phoneNumber"
+                    value={formValues.phoneNumber}
+                    onChange={handleChange}
+                    error={formErrors.phoneNumber}
+                  /> */}
+
+
+                  <CountryInput
+                    label="Phone Number"
                     name="phoneNumber"
                     value={formValues.phoneNumber}
                     onChange={handleChange}

@@ -7,10 +7,16 @@ import { useTranslation } from 'react-i18next'
 import Button from './common/Button'
 import { GreenArrow, Heart, WhiteArrow } from '../utils/icons'
 import Description from './common/Description'
+import { useNavigate } from 'react-router-dom'
 
 const Unsere = () => {
 
     const { t } = useTranslation();
+    const navigate = useNavigate()
+
+    const handleCardClick = (id) => {
+        navigate(`/unsere/${id}`)
+    }
     const leftCard = CardsData.find((card) => card.id === '1')
     const rightCards = CardsData.filter((card) => card.id === '2' || card.id === '3')
 
@@ -34,8 +40,9 @@ const Unsere = () => {
                                 </Button>
                             </div>
                         </div>
+
                         {leftCard && (
-                            <div className='justify-between border border-[#ECF1EE] rounded-[40px] xl:p-6  p-3 overflow-hidden  flex flex-col  bg-white'>
+                            <div onClick={() => handleCardClick(leftCard.id)} className='shadow-box justify-between border border-[#ECF1EE] rounded-[40px] xl:p-6  p-3 overflow-hidden  flex flex-col  bg-white'>
                                 <img
                                     src={leftCard.image}
                                     alt={leftCard.key}
@@ -62,7 +69,7 @@ const Unsere = () => {
                     <div className='max-w-[770.5px] w-full gap-y-[60px] flex flex-col'>
                         {rightCards.map((item, index) => {
                             return (
-                                <div className='justify-between border border-[#ECF1EE] rounded-[40px] xl:p-6  p-3 overflow-hidden  flex flex-col  bg-white' key={index}>
+                                <div onClick={() => handleCardClick(item.id)} className='shadow-box justify-between border border-[#ECF1EE] rounded-[40px] xl:p-6  p-3 overflow-hidden  flex flex-col  bg-white' key={index}>
                                     <img
                                         src={item.image}
                                         alt={item.key}
@@ -83,8 +90,6 @@ const Unsere = () => {
                                             <WhiteArrow />
                                         </Button>
                                     </div>
-
-
                                 </div>
                             )
                         })}

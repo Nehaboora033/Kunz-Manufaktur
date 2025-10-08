@@ -43,7 +43,7 @@ const Header = () => {
                             to={item.link}
                             key={index}
                             className={({ isActive }) =>
-                                `text-base font-normal transition-colors duration-150 whitespace-nowrap ${isActive ? 'green' : 'linkgrey'}`
+                                `text-base  leading-[20px] transition-colors duration-150 whitespace-nowrap ${isActive ? 'green font-bold' : 'linkgrey font-normal'}`
                             } onClick={() => setIsOpen(null)}
                         >
                             {t(item.key)}
@@ -51,8 +51,8 @@ const Header = () => {
                     ))}
                 </nav>
 
-                <div className="flex items-center sm:gap-6 gap-1">
-                    <div className="flex items-center sm:gap-6 gap-1">
+                <div className="flex items-center sm:gap-6 gap-2">
+                    <div className="flex items-center sm:gap-6 gap-2">
                         <button
                             onClick={() => changeLanguage('en')}
                             className={`sm:font-bold font-medium leading-[100%] cursor-pointer ${i18n.language === 'en' ? 'green' : 'linkgrey'}`}

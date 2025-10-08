@@ -18,7 +18,16 @@ const AppRoutes = createBrowserRouter([
       },
       {
         path: 'unsere',
-        element: <Unsere />,
+        children: [
+          {
+            index: true,
+            element: <Unsere />, // for /unsere
+          },
+          {
+            path: ':id', // 👈 for /unsere/:id
+            element: <Unsere />, // same component, just dynamic
+          },
+        ],
       },
       {
         path: 'workshops',

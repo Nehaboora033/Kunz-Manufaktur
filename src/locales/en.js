@@ -171,7 +171,15 @@ const en = {
             button: "Book an Event"
         },
 
-    }
+    },
+    unorderlist: {
+        first: 'Home visits',
+        second: '1-2 hour sessions',
+        third: 'Tailor-made designs',
+        fourth: 'Style advice',
+        bottomtext: 'We discuss your ideas, assess your space, and create a customized plan that will make your floral dreams come true.',
+        toptext: 'Every room has its own character, and every client has individual preferences. Our personalized consultations ensure that your floral arrangements are a perfect fit for your surroundings and lifestyle.',
+    },
 
 
 }
