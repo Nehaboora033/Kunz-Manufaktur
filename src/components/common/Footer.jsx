@@ -9,9 +9,9 @@ import Text from './Text'
 const Footer = () => {
   const { t } = useTranslation()
   return (
-    <div className='bggreen py-[40px]'>
+    <div className='bggreen py-[40px] mt-[100px] '>
       <div className='text-white max-w-[1865px] mx-auto px-3'>
-        <div className='flex flex-wrap gap-y-[40px] gap-x-[40px] '>
+        <div className='flex flex-wrap gap-y-[40px]  '>
           <div className='max-w-[500px] w-full'>
             <div className='flex gap-4 items-center mb-8'>
               <FooterLogo />
@@ -25,8 +25,11 @@ const Footer = () => {
             </Text>
           </div>
           <div className='flex-1 flex gap-[40px] '>
+            <div>
+              
+            </div>
             {/* services */}
-            <div className='max-w-[406.67px] w-full'>
+            <div className='w-1/3'>
               <Text className='!font-bold mb-[32px]'>
                 {t('linkservices.title')}
               </Text>
@@ -41,7 +44,7 @@ const Footer = () => {
               ))}
             </div>
             {/* contact */}
-            <div className='max-w-[406.7px] w-full'>
+            <div className='w-1/3'>
               <Text className='!font-bold  mb-[32px]'>
                 {t('linkcontact.title')}
               </Text>
@@ -54,7 +57,7 @@ const Footer = () => {
               ))}
             </div>
             {/* opening time */}
-            <div className='max-w-[406.7px] w-full'>
+            <div className='w-1/3'>
               <Text className='!font-bold  mb-[32px]'>
                 {t('linkopening.title')}
               </Text>

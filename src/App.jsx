@@ -4,7 +4,6 @@ import './i18n'
 import Header from './components/common/Header'
 import Footer from './components/common/Footer'
 import BackToTop from './components/common/BackToTop'
-import Bereit from './components/Bereit'
 
 function App() {
 
@@ -15,7 +14,7 @@ function App() {
       <main className='mt-[100px]'>
         <Outlet />
       </main>
-      <Bereit />
+    
       {/* <Footer /> */}
       {/* <BackToTop /> */}
 

@@ -1,4 +1,4 @@
-import { Dug, Facebook, Flower, Heart, Insta, Whatsup } from "./icons"
+import { Cake, Dug, Facebook, Flower, Gift, Heart, Insta, Whatsup } from "./icons"
 import image1 from '../assets/webp/Image1.webp'
 import image2 from '../assets/webp/image2.webp'
 import image3 from '../assets/webp/image3.webp'
@@ -96,6 +96,7 @@ export const CardsData = [
     },
     {
         id: '8',
+         icon: Gift,
         title: 'cards.8.title',
         data: 'cards.8.description',
         buttontext: 'cards.8.button',
@@ -103,6 +104,7 @@ export const CardsData = [
     },
     {
         id: '9',
+         icon: Cake,
         title: 'cards.9.title',
         data: 'cards.9.description',
         buttontext: 'cards.9.button',

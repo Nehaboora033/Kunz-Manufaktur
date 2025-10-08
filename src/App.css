@@ -45,6 +45,8 @@
 
 .herogradient {
     background: var(--gradient-hero);
+    background-size: 100% 1110px;
+    background-repeat: no-repeat;
 }
 
 .boxgradient {

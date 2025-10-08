@@ -35,47 +35,56 @@ const Unsere = () => {
                             </div>
                         </div>
                         {leftCard && (
-                            <div className='border border-[#ECF1EE] rounded-[40px] xl:p-6  p-3 overflow-hidden  flex flex-col  bg-white'>
+                            <div className='justify-between border border-[#ECF1EE] rounded-[40px] xl:p-6  p-3 overflow-hidden  flex flex-col  bg-white'>
                                 <img
                                     src={leftCard.image}
                                     alt={leftCard.key}
                                     className=' object-cover rounded-[24px] md:mb-[24px] mb-4'
                                 />
-                                <div className='flex sm:gap-4 gap-2 items-center md:mb-6 mb-4'>
-                                    <Heart className={'max-sm:size-[30px]'} />
-                                    <SectionText className='!font-semibold  green whitespace-nowrap'>{t(leftCard.title)}
+                                <div className='flex flex-col justify-between flex-grow'>
+                                    <div>
+                                        <div className='flex sm:gap-4 gap-2 items-center md:mb-6 mb-4'>
+                                            <Heart className={'max-sm:size-[30px]'} />
+                                            <SectionText className='!font-semibold  green whitespace-nowrap'>{t(leftCard.title)}
+                                            </SectionText>
+                                        </div>
 
-                                    </SectionText>
+                                        <Description className='textgrey md:mb-6 mb-4'>{t(leftCard.data)} </Description>
+                                    </div>
+                                    <Button className={'bggreen flex items-center gap-2 text-white justify-center'}>
+                                        {t(leftCard.buttontext)}
+                                        <WhiteArrow />
+                                    </Button>
                                 </div>
-
-                                <Description className='textgrey md:mb-6 mb-4'>{t(leftCard.data)} </Description>
-                                <Button className={'bggreen flex items-center gap-2 text-white justify-center'}>
-                                    {t(leftCard.buttontext)}
-                                    <WhiteArrow />
-                                </Button>
                             </div>
                         )}
                     </div>
                     <div className='max-w-[770.5px] w-full gap-y-[60px] flex flex-col'>
                         {rightCards.map((item, index) => {
                             return (
-                                <div className='border border-[#ECF1EE] rounded-[40px] xl:p-6  p-3 overflow-hidden  flex flex-col  bg-white' key={index}>
+                                <div className='justify-between border border-[#ECF1EE] rounded-[40px] xl:p-6  p-3 overflow-hidden  flex flex-col  bg-white' key={index}>
                                     <img
                                         src={item.image}
                                         alt={item.key}
                                         className=' object-cover rounded-[24px]  md:mb-[24px] mb-4 '
                                     />
-                                    <div className='flex sm:gap-4 gap-2 items-center md:mb-6 mb-4'>
-                                        <item.icon className="max-sm:size-[30px]" />
-                                        <SectionText className='!font-semibold  green whitespace-nowrap'>  {t(item.title)}
-                                        </SectionText>
+                                    <div className='flex flex-col justify-between flex-grow'>
+                                        <div>
+                                            <div className='flex sm:gap-4 gap-2 items-center md:mb-6 mb-4'>
+                                                <item.icon className="max-sm:size-[30px]" />
+                                                <SectionText className='!font-semibold  green whitespace-nowrap'>  {t(item.title)}
+                                                </SectionText>
+                                            </div>
+
+                                            <Description className='textgrey md:mb-6 mb-4'>  {t(item.data)}</Description>
+                                        </div>
+                                        <Button className={'bggreen flex items-center gap-2 text-white justify-center'}>
+                                            {t(item.buttontext)}
+                                            <WhiteArrow />
+                                        </Button>
                                     </div>
 
-                                    <Description className='textgrey md:mb-6 mb-4'>  {t(item.data)}</Description>
-                                    <Button className={'bggreen flex items-center gap-2 text-white justify-center'}>
-                                        {t(item.buttontext)}
-                                        <WhiteArrow />
-                                    </Button>
+
                                 </div>
                             )
                         })}

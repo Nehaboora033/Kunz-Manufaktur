@@ -12,28 +12,31 @@ const Cardsection = () => {
     const TopCards = CardsData.filter((card) => card.id === '2' || card.id === '3');
     const DownCards = CardsData.filter((card) => card.id === '8' || card.id === '9');
     return (
-        <div className='pb-[100px] pt-[40px]'>
+        <div className='pb-[100px] pt-[40px] bg-[#FAFAFA]'>
             <Container>
                 <div className='grid md:grid-cols-2 grid-cols-1 md:gap-[40px] gap-[24px]'>
                     {TopCards.map((item, index) => {
                         return (
-                            <div className='border border-[#ECF1EE] rounded-[40px] xl:p-6  p-3 overflow-hidden  flex flex-col  bg-white' key={index}>
+                            <div className='justify-between border border-[#ECF1EE] rounded-[40px] xl:p-6  p-3 overflow-hidden  flex flex-col  bg-white' key={index}>
                                 <img
                                     src={item.image}
                                     alt={item.key}
                                     className=' object-cover rounded-[24px]  md:mb-[24px] mb-4 '
                                 />
-                                <div className='flex sm:gap-4 gap-2 items-center md:mb-6 mb-4'>
-                                    <item.icon className="max-sm:size-[30px]" />
-                                    <SectionText className='!font-semibold  green whitespace-nowrap'>  {t(item.title)}
-                                    </SectionText>
+                                <div className='flex flex-col justify-between flex-grow'>
+                                    <div>
+                                        <div className='flex sm:gap-4 gap-2 items-center md:mb-6 mb-4'>
+                                            <item.icon className="max-sm:size-[30px]" />
+                                            <SectionText className='!font-semibold  green whitespace-nowrap'>  {t(item.title)}
+                                            </SectionText>
+                                        </div>
+                                        <Description className='textgrey md:mb-6 mb-4'>  {t(item.data)}</Description>
+                                    </div>
+                                    <Button className={'bggreen flex items-center gap-2 text-white justify-center'}>
+                                        {t(item.buttontext)}
+                                        <WhiteArrow />
+                                    </Button>
                                 </div>
-
-                                <Description className='textgrey md:mb-6 mb-4'>  {t(item.data)}</Description>
-                                <Button className={'bggreen flex items-center gap-2 text-white justify-center'}>
-                                    {t(item.buttontext)}
-                                    <WhiteArrow />
-                                </Button>
                             </div>
                         )
                     })}
@@ -44,23 +47,30 @@ const Cardsection = () => {
                     {DownCards.map((item) => (
                         <div
                             key={item.id}
-                            className='border border-[#ECF1EE] rounded-[40px] xl:p-6 p-3 overflow-hidden flex flex-col bg-white'
+                            className='border border-[#ECF1EE] justify-between rounded-[40px] xl:p-6 p-3 overflow-hidden flex flex-col bg-white'
                         >
                             <img
                                 src={item.image}
                                 alt={item.key}
                                 className='object-cover rounded-[24px] md:mb-[24px] mb-4'
                             />
-                            <SectionText className='!font-semibold green md:mb-4 mb-3'>
-                                {t(item.title)}
-                            </SectionText>
-                            <Description className='textgrey md:mb-6 mb-4'>
-                                {t(item.data)}
-                            </Description>
-                            <Button className='bggreen flex items-center gap-2 text-white justify-center'>
-                                {t(item.buttontext)}
-                                <WhiteArrow />
-                            </Button>
+                            <div className='flex flex-col justify-between flex-grow'>
+                                <div>
+                                    <div className='flex sm:gap-4 gap-2 items-center md:mb-6 mb-4'>
+                                        <item.icon className={'max-sm:size-[30px]'} />
+                                        <SectionText className='!font-semibold green md:mb-4 mb-3'>
+                                            {t(item.title)}
+                                        </SectionText>
+                                    </div>
+                                    <Description className='textgrey md:mb-6 mb-4'>
+                                        {t(item.data)}
+                                    </Description>
+                                </div>
+                                <Button className='bggreen flex items-center gap-2 text-white justify-center'>
+                                    {t(item.buttontext)}
+                                    <WhiteArrow />
+                                </Button>
+                            </div>
                         </div>
                     ))}
                 </div>

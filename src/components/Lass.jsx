@@ -216,7 +216,7 @@ const Lass = () => {
               <img
                 src={flower}
                 alt="flower"
-                className="object-cover absolute lg:bottom-[-80px] lg:right-[-180px] bottom-[-30px] right-[-100px] max-lg:w-[400px] max-md:w-[300px] max-sm:hidden block"
+                className="object-cover absolute lg:bottom-[-80px] lg:right-[-180px] bottom-[-30px] right-[-100px] max-lg:w-[400px] max-md:w-[300px] max-sm:hidden block pointer-events-none"
               />
             </div>
           </div>

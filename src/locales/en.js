@@ -28,8 +28,8 @@ const en = {
     },
     linkservices: {
         title: 'Services',
-        advice: 'Personal advice',
-        flower: 'Flower subscription',
+        advice: 'Personal Advice',
+        flower: 'Flower Subscription',
         workshops: 'Workshops',
         about: 'About Us',
     },

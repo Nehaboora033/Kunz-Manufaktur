@@ -3,7 +3,7 @@ import flower from '../assets/webp/flowerhero.webp'
 
 const Flower = () => {
     return (
-        <img src={flower} alt="flower" className='object-cover size-[661px] block mx-auto translate-y-1/2' />
+        <img src={flower} alt="flower" className='object-cover size-[661px] block mx-auto ' />
     )
 }
 
