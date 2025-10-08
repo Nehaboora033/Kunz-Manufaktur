@@ -98,7 +98,10 @@ const en = {
         other: "flowers, other",
     },
 
-
+    workshops: {
+        title: 'Kreative Workshops',
+        text: 'Discover the art of floristry in our hands-on workshops. Suitable for beginners and advanced students.',
+    }
 
 
 

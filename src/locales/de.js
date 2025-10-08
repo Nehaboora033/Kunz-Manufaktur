@@ -94,9 +94,13 @@ const de = {
         workshop: 'Workshop-Buchung',
         event: ' Eventblumen',
         other: "Sonstiges",
-    }
+    },
+    workshops: {
+        title: ' Kreative Workshops',
+        text: 'Entdecken Sie die Kunst der Floristik in unseren praktischen Workshops. Geeignet für Anfänger und Fortgeschrittene.',
 
-
+    },
 }
+
 
 export default de

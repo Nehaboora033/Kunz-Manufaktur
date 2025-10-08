@@ -2,10 +2,9 @@ import React from 'react'
 
 const SectionText = ({ className, children }) => {
     return (
-        <h4 className={`${className} font-normal leading-[30px] text-[24px] `}>
+        <h3 className={`${className} font-normal leading-[30px] sm:text-[24px] text-[20px]`}>
             {children}
-
-        </h4>
+        </h3>
     )
 }
 
