@@ -5,7 +5,7 @@ import SectionText from './common/SectionText'
 import { useTranslation } from 'react-i18next'
 import { CardsData } from '../utils/helper'
 import Description from './common/Description'
-import { Time, Dates, Location, Customer } from '../utils/icons'
+import { Time, Dates, Location, Customer, WhiteArrow } from '../utils/icons'
 import Button from './common/Button'
 
 const Workshops = () => {
@@ -14,10 +14,10 @@ const Workshops = () => {
     return (
         <div className='py-[100px]'>
             <Container>
-                <SubHeading className='mb-6'>
+                <SubHeading className='md:mb-6 mb-4 max-md:text-center' >
                     {t('workshops.title')}
                 </SubHeading>
-                <SectionText className='max-w-[1000px] w-full mb-[60px]'>
+                <SectionText className='max-w-[1000px] w-full md:mb-[60px] mb-[35px] max-md:text-center'>
                     {t('workshops.text')}
                 </SectionText>
                 <div className='grid md:grid-cols-2 grid-cols-1 xl:gap-[40px] gap-[24px]'>
@@ -29,38 +29,39 @@ const Workshops = () => {
                             <img
                                 src={item.image}
                                 alt={item.key}
-                                className=' object-cover rounded-[24px] mb-[24px]'
+                                className=' object-cover rounded-[24px] md:mb-[24px] mb-4'
                             />
-                            <SectionText className='!font-semibold mb-[24px] green whitespace-nowrap'>{item.key}</SectionText>
-                            <Description className='textgrey mb-6'>{item.data}</Description>
-                            <div className='mb-6'>
+                            <SectionText className='!font-semibold md:mb-[24px] mb-4 green whitespace-nowrap'>{t(item.title)} </SectionText>
+                            <Description className='textgrey md:mb-6 mb-4'>{t(item.data)}</Description>
+                            <div className='md:mb-6 mb-4'>
                                 <div className='flex items-center gap-2 mb-2'>
-                                    <Dates />
+                                    <Dates  className='max-sm:size-[25px]'/>
                                     <Description className={'textgrey'}>
-                                        {item.date}
+                                        {t(item.date)}
                                     </Description>
                                 </div>
                                 <div className='flex items-center gap-2 mb-2 '>
-                                    <Time />
+                                    <Time  className='max-sm:size-[25px]'/>
                                     <Description className={'textgrey'}>
-                                        {item.time}
+                                        {t(item.time)}
                                     </Description>
                                 </div>
                                 <div className='flex items-center gap-2 mb-2'>
-                                    <Location />
+                                    <Location  className='max-sm:size-[25px]'/>
                                     <Description className={'textgrey'}>
-                                        {item.location}
+                                        {t(item.location)}
                                     </Description>
                                 </div>
                                 <div className='flex items-center gap-2 mb-2'>
-                                    <Customer />
+                                    <Customer className='max-sm:size-[25px]'/>
                                     <Description className={'textgrey'}>
-                                        {item.customername}
+                                        {t(item.customername)}
                                     </Description>
                                 </div>
                             </div>
-                            <Button className='bggreen text-white !py-[16px]'>
-                                {item.buttontext}
+                            <Button className='bggreen text-white flex gap-2'>
+                                {t(item.buttontext)}
+                                <WhiteArrow />
                             </Button>
                         </div>
                     ))}

@@ -100,6 +100,66 @@ const de = {
         text: 'Entdecken Sie die Kunst der Floristik in unseren praktischen Workshops. Geeignet für Anfänger und Fortgeschrittene.',
 
     },
+
+    services: {
+        title: ' Unsere Floralen Dienstleistungen',
+        text: 'Entdecken Sie unser Angebot an personalisierten Blumen-Erlebnissen, von Beratungen bis hin zu kreativen Workshops.',
+        buttontext: 'Show all services',
+    },
+    cards: {
+        1: {
+            title: "Persönliche Beratung",
+            description: "Haus- oder Bürobesuche, um Ihren Raum, Stil und Ihre Bedürfnisse zu verstehen. Wir erstellen maßgeschneiderte Arrangements, die perfekt zu Ihrer Umgebung passen.",
+            button: "Beratung vereinbaren"
+        },
+        2: {
+            title: "Blumen-Abonnement",
+            description: "Regelmäßige Lieferungen frischer, saisonaler Arrangements. Wählen Sie Ihre Größe, Häufigkeit und Stilpräferenzen für ein wirklich personalisiertes Erlebnis.",
+            button: "Ein Abonnement starten"
+        },
+        3: {
+            title: "Kreative Workshops",
+            description: "Lernen Sie die Kunst des Blumendesigns in unseren praktischen Workshops. Ideal für Anfänger und diejenigen, die ihre Fähigkeiten verfeinern möchten.",
+            button: "Workshop buchen"
+        },
+        4: {
+            title: "Frühjahrs-Kranz-Workshop",
+            description: "Gestalten Sie einen schönen Frühlingskranz mit frischen saisonalen Blumen und Grünpflanzen. Perfekt für Anfänger!",
+            date: '15. September 2025',
+            time: '14:00 - 16:00 Uhr',
+            location: "Kunz Studio, München",
+            customer: "Max. 8 Teilnehmer",
+            button: "Buchen",
+        },
+        5: {
+            title: "Brautstrauß-Masterclass",
+            description: "Lernen Sie professionelle Techniken zur Erstellung atemberaubender Brautsträuße. Fortgeschrittene Arrangierfähigkeiten.",
+            date: '22. September 2025',
+            time: '10:00 - 13:00 Uhr',
+            location: "Kunz Studio, München",
+            customer: "Max. 8 Teilnehmer",
+            button: "Buchen",
+        },
+        6: {
+            title: "Gepresste Blumen Kunst",
+            description: "Erstellen Sie wunderschöne gepresste Blumenkunstwerke zum Mitnehmen. Alle Materialien und Rahmen sind enthalten.",
+            date: '5. Oktober 2025',
+            time: '15:00 - 17:00 Uhr',
+           location: "Kunz Studio, München",
+            customer: "Max. 8 Teilnehmer",
+            button: "Buchen",
+        },
+        7: {
+            title: "Frühjahrsstrauß-Arrangieren",
+            description: "Lernen Sie, wie man schöne Sträuße mit frischen Frühlingsblumen arrangiert.",
+            date: '15. Oktober 2025',
+            time: '14:00 - 17:00 Uhr',
+             location: "Kunz Studio, München",
+            customer: "Max. 8 Teilnehmer",
+            button: "Buchen",
+        }
+
+    }
 }
 
 

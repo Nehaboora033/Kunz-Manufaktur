@@ -1,54 +1,85 @@
 import React from 'react'
 import Container from './common/Container'
 import { CardsData } from '../utils/helper'
-import Description from './common/Description'
 import SectionText from './common/SectionText'
+import SubHeading from './common/SubHeading'
+import { useTranslation } from 'react-i18next'
+import Button from './common/Button'
+import { GreenArrow, Heart, WhiteArrow } from '../utils/icons'
+import Description from './common/Description'
 
 const Unsere = () => {
+
+    const { t } = useTranslation();
     const leftCard = CardsData.find((card) => card.id === '1')
     const rightCards = CardsData.filter((card) => card.id === '2' || card.id === '3')
 
     return (
         <div>
             <Container>
-                <div className="flex justify-between">
+                <div className="grid md:grid-cols-2 grid-cols-1 gap-[60px]">
                     {/* Left Section */}
-                    <div className="w-[770.5px]">
+                    <div className='max-w-[770.5px] w-full'>
+                        <div className='sm:mb-[100px] mb-[60px]'>
+                            <SubHeading className={'w-full mb-[24px] max-sm:text-center'}>
+                                {t('services.title')}
+                            </SubHeading>
+                            <SectionText className={'mb-6 max-sm:text-center'}>
+                                {t('services.text')}
+                            </SectionText>
+                            <div className='max-sm:flex justify-center'>
+                                <Button className={'border border-[#3E7651] green flex items-center gap-2'}>
+                                    {t('services.buttontext')}
+                                    <GreenArrow />
+                                </Button>
+                            </div>
+                        </div>
                         {leftCard && (
-                            <div className="p-6 shadow-card border border-[#ECF1EE] rounded-[40px]">
-                                <img src={leftCard.image} alt="image " className='object-cover  rounded-[24px] mb-6' />
-                                <div className='flex items-center gap-4 mb-4'>
-                                    <div className="size-[48px]">{leftCard.icon && <leftCard.icon />}</div>
-                                    <SectionText className={'green'}>
-                                        {leftCard.key}
+                            <div className='border border-[#ECF1EE] rounded-[40px] xl:p-6  p-3 overflow-hidden  flex flex-col  bg-white'>
+                                <img
+                                    src={leftCard.image}
+                                    alt={leftCard.key}
+                                    className=' object-cover rounded-[24px] md:mb-[24px] mb-4'
+                                />
+                                <div className='flex sm:gap-4 gap-2 items-center md:mb-6 mb-4'>
+                                    <Heart className={'max-sm:size-[30px]'} />
+                                    <SectionText className='!font-semibold  green whitespace-nowrap'>{t(leftCard.title)}
+
                                     </SectionText>
                                 </div>
 
-                                <Description className={'mb-6'}>
-                                    {leftCard.data}
-                                </Description>
+                                <Description className='textgrey md:mb-6 mb-4'>{t(leftCard.data)} </Description>
+                                <Button className={'bggreen flex items-center gap-2 text-white justify-center'}>
+                                    {t(leftCard.buttontext)}
+                                    <WhiteArrow />
+                                </Button>
                             </div>
                         )}
                     </div>
-
-                    {/* Right Section */}
-                    <div className="w-[770.5px] flex flex-col gap-8">
-                        {rightCards.map((card) => {
-                            const Icon = card.icon
+                    <div className='max-w-[770.5px] w-full gap-y-[60px] flex flex-col'>
+                        {rightCards.map((item, index) => {
                             return (
-                                <div key={card.id} className="p-6 rounded-2xl shadow-card bg-white">                             
-                                    <div className="mb-4">{Icon && <Icon />}</div>                         
-                                    <h2 className="text-2xl font-semibold green mb-2">{card.key}</h2>
-                                    <p className="textgrey mb-4">{card.data}</p>
-                                    <button className="bg-green-600 text-white px-5 py-2 rounded-md hover:bg-green-700 transition">
-                                        {card.buttontext}
-                                    </button>
+                                <div className='border border-[#ECF1EE] rounded-[40px] xl:p-6  p-3 overflow-hidden  flex flex-col  bg-white' key={index}>
+                                    <img
+                                        src={item.image}
+                                        alt={item.key}
+                                        className=' object-cover rounded-[24px]  md:mb-[24px] mb-4 '
+                                    />
+                                    <div className='flex sm:gap-4 gap-2 items-center md:mb-6 mb-4'>
+                                        <item.icon className="max-sm:size-[30px]" />
+                                        <SectionText className='!font-semibold  green whitespace-nowrap'>  {t(item.title)}
+                                        </SectionText>
+                                    </div>
+
+                                    <Description className='textgrey md:mb-6 mb-4'>  {t(item.data)}</Description>
+                                    <Button className={'bggreen flex items-center gap-2 text-white justify-center'}>
+                                        {t(item.buttontext)}
+                                        <WhiteArrow />
+                                    </Button>
                                 </div>
                             )
                         })}
                     </div>
-
-
                 </div>
             </Container>
         </div>
