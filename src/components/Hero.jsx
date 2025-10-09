@@ -20,11 +20,11 @@ const Hero = () => {
             {t('heading.text')}
           </h2>
           <div className='flex items-center justify-center gap-[17.82px] flex-wrap '>
-            <Button className={'flex gap-[11px] bggreen text-white items-center '}>
+            <Button className={'flex sm:gap-[11px] gap-2 bggreen text-white items-center  h-[56px]'}>
               {t('hero.buttontext1')}
               <WhiteArrow />
             </Button>
-            <Button className={'flex gap-[11px] border-[1.27px] !py-[19px] items-center border-[#3E7651]  text-[#3E7651] '}>
+            <Button className={'flex sm:gap-[11px] gap-2 border-[1.27px]  h-[56px] items-center  border-[#3E7651] text-[#3E7651]'}>
               {t('hero.buttontext2')}
               <GreenArrow />
             </Button>

@@ -63,13 +63,13 @@ const Lass = () => {
   }
 
   return (
-    <div className="py-[100px]">
+    <div className="sm:py-[100px] py-[80px]">
       <Container className="overflow-hidden">
         {/* Heading Section */}
         <Subsheading className="text-center mb-[24px]">
           {t('talk.title')}
         </Subsheading>
-        <SectionText className="text-center mb-[60px]">
+        <SectionText className="text-center mb-[60px] black">
           {t('talk.data')}
         </SectionText>
 
@@ -175,7 +175,7 @@ const Lass = () => {
                 </div>
 
                 {/* Submit Button */}
-                <Button className="bggreen text-white !py-[16px] w-full mt-6">
+                <Button className="bggreen h-[52px] text-white !py-[16px] w-full mt-6">
                   {t('talk.buttontext')}
                 </Button>
               </form>

@@ -24,7 +24,7 @@ const AppRoutes = createBrowserRouter([
             element: <Unsere />, // for /unsere
           },
           {
-            path: ':id', // 👈 for /unsere/:id
+            path: ':id', //  for /unsere/:id
             element: <Unsere />, // same component, just dynamic
           },
         ],

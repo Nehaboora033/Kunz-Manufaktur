@@ -98,6 +98,7 @@ const de = {
     workshops: {
         title: ' Kreative Workshops',
         text: 'Entdecken Sie die Kunst der Floristik in unseren praktischen Workshops. Geeignet für Anfänger und Fortgeschrittene.',
+        button: 'Alle Workshops anzeigen',
 
     },
 
@@ -181,7 +182,7 @@ const de = {
     meta: {
         tittle: 'Blumen online bestellen – Schnell & Zuverlässig',
         description: 'Schöne Blumensträuße, kreative Arrangements und zuverlässige Lieferung. Bestellen Sie online und überraschen Sie Ihre Liebsten.',
-    }
+    },
 }
 
 

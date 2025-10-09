@@ -6,7 +6,7 @@ import SectionText from './common/SectionText'
 import Description from './common/Description'
 import { WhiteArrow } from '../utils/icons'
 import Button from './common/Button'
-import {  useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 const Cardsection = () => {
     const { t } = useTranslation();
@@ -18,8 +18,9 @@ const Cardsection = () => {
     const TopCards = CardsData.filter((card) => card.id === '2' || card.id === '3');
     const DownCards = CardsData.filter((card) => card.id === '8' || card.id === '9');
     return (
-        <div className='pb-[100px] pt-[40px] bg-[#FAFAFA]'>
+        <div className='sm:pb-[100px] pb-[80px] pt-[40px] bg-[#FAFAFA]'>
             <Container>
+                {/* Top grid */}
                 <div className='grid md:grid-cols-2 grid-cols-1 md:gap-[40px] gap-[24px]'>
                     {TopCards.map((item, index) => {
                         return (
@@ -38,7 +39,7 @@ const Cardsection = () => {
                                         </div>
                                         <Description className='textgrey md:mb-6 mb-4'>  {t(item.data)}</Description>
                                     </div>
-                                    <Button className={'bggreen flex items-center gap-2 text-white justify-center'}>
+                                    <Button className={'bggreen h-[56px]  flex items-center gap-2 text-white justify-center'}>
                                         {t(item.buttontext)}
                                         <WhiteArrow />
                                     </Button>
@@ -48,7 +49,7 @@ const Cardsection = () => {
                     })}
                 </div>
 
-                {/* ===== DOWN GRID ===== */}
+                {/*  Down grid */}
                 <div className='grid md:grid-cols-2 grid-cols-1 md:gap-[40px] gap-[24px] mt-[40px]'>
                     {DownCards.map((item) => (
                         <div
@@ -64,7 +65,7 @@ const Cardsection = () => {
                                 <div>
                                     <div className='flex sm:gap-4 gap-2 items-center md:mb-6 mb-4'>
                                         <item.icon className={'max-sm:size-[30px]'} />
-                                        <SectionText className='!font-semibold green md:mb-4 mb-3'>
+                                        <SectionText className='!font-semibold green '>
                                             {t(item.title)}
                                         </SectionText>
                                     </div>
@@ -72,7 +73,7 @@ const Cardsection = () => {
                                         {t(item.data)}
                                     </Description>
                                 </div>
-                                <Button className='bggreen flex items-center gap-2 text-white justify-center'>
+                                <Button className='bggreen h-[56px]  flex items-center gap-2 text-white justify-center'>
                                     {t(item.buttontext)}
                                     <WhiteArrow />
                                 </Button>

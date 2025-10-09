@@ -21,15 +21,12 @@ function App() {
 
   return (
     <>
-
       <Header />
       <main className='mt-[100px]'>
         <Outlet />
       </main>
-
       <Footer />
       <BackToTop />
-
     </>
   )
 }

@@ -21,20 +21,20 @@ const Unsere = () => {
     const rightCards = CardsData.filter((card) => card.id === '2' || card.id === '3')
 
     return (
-        <div className=''>
-            <Container className={'pt-[300px]'}>
-                <div className="grid md:grid-cols-2 grid-cols-1 gap-[60px]">
+        <div className='sm:pb-[100px] py-[80px]'>
+            <Container className={''}>
+                <div className="grid md:grid-cols-2 grid-cols-1 sm:gap-[60px] gap-[40px]">
                     {/* Left Section */}
                     <div className='max-w-[770.5px] w-full'>
                         <div className='sm:mb-[100px] mb-[60px]'>
                             <Subsheading className={'w-full mb-[24px] max-sm:text-center'}>
                                 {t('services.title')}
                             </Subsheading>
-                            <SectionText className={'mb-6 max-sm:text-center'}>
+                            <SectionText className={'mb-6 max-sm:text-center black'}>
                                 {t('services.text')}
                             </SectionText>
                             <div className='max-sm:flex justify-center'>
-                                <Button className={'border border-[#3E7651] green flex items-center gap-2'}>
+                                <Button className={'border border-[#3E7651] green flex items-center gap-2 h-[56px]'}>
                                     {t('services.buttontext')}
                                     <GreenArrow />
                                 </Button>
@@ -55,7 +55,6 @@ const Unsere = () => {
                                             <SectionText className='!font-semibold  green whitespace-nowrap'>{t(leftCard.title)}
                                             </SectionText>
                                         </div>
-
                                         <Description className='textgrey md:mb-6 mb-4'>{t(leftCard.data)} </Description>
                                     </div>
                                     <Button className={'bggreen flex items-center gap-2 text-white justify-center'}>

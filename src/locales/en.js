@@ -101,6 +101,7 @@ const en = {
     workshops: {
         title: 'Kreative Workshops',
         text: 'Discover the art of floristry in our hands-on workshops. Suitable for beginners and advanced students.',
+        button:'View All Shops',
     },
     services: {
         title: 'Our Floral Services',
@@ -183,9 +184,7 @@ const en = {
     meta: {
         tittle: ' Order flowers online - Fast & Reliable',
         description: 'Beautiful bouquets, creative arrangements, and reliable delivery. Order online and surprise your loved ones.',
-    }
-
-
+    },
 }
 
 

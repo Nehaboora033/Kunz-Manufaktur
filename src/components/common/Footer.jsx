@@ -8,10 +8,10 @@ import Text from './Text'
 const Footer = () => {
   const { t } = useTranslation()
   return (
-    <div className='bggreen py-[40px] mt-[100px] '>
+    <div className='bggreen py-[40px]'>
       <div className='text-white max-w-[1865px] mx-auto px-3'>
         <div className='flex flex-wrap gap-[40px]  '>
-          <div data-aos="fade-right" className='max-w-[500px] w-full'>
+          <div  data-aos="fade-up" className='max-w-[500px] w-full'>
             <div className='flex gap-4 items-center mb-8'>
               <FooterLogo />
               <h3 className='font-semibold text-[22px] leading-[120%] max-w-[122px] '>
@@ -23,10 +23,10 @@ const Footer = () => {
               {t('footer.text')}
             </Text>
           </div>
-          <div data-aos="fade-left" className='flex-1 flex min-[1095px]:gap-[40px] gap-5 max-sm:flex-wrap'>
+          <div data-aos="fade-down" className='flex-1 flex min-[1095px]:gap-[40px] gap-5 max-sm:flex-wrap'>
             {/* services */}
             <div className='sm:w-1/3 min-[430px]:w-[48%] w-full '>
-              <Text className='!font-bold md:mb-[32px] mb-3'>
+              <Text className='!font-bold md:mb-[32px] mb-3 whitespace-nowrap'>
                 {t('linkservices.title')}
               </Text>
               {Footer_Links.map((item, index) => (
@@ -41,7 +41,7 @@ const Footer = () => {
             </div>
             {/* contact */}
             <div className='sm:w-1/3  min-[430px]:w-[48%] w-full'>
-              <Text className='!font-bold  md:mb-[32px] mb-3'>
+              <Text className='!font-bold  md:mb-[32px] mb-3 whitespace-nowrap'>
                 {t('linkcontact.title')}
               </Text>
               {Footer_contactInfo.map((item, index) => (
@@ -54,7 +54,7 @@ const Footer = () => {
             </div>
             {/* opening time */}
             <div className='sm:w-1/3 min-[430px]:w-[46%] w-full '>
-              <Text className='!font-bold  md:mb-[32px] mb-3'>
+              <Text className='!font-bold  md:mb-[32px] mb-3 whitespace-nowrap'>
                 {t('linkopening.title')}
               </Text>
               {Footer_Info.map((item, index) => (
@@ -81,7 +81,6 @@ const Footer = () => {
           </div>
         </div>
       </div>
-
     </div >
   )
 }

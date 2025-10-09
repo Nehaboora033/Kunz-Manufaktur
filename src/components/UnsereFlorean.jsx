@@ -22,17 +22,15 @@ const Floralen = ({ card }) => {
             </div>
         )
     }
-
     const Icon = card.icon
-
     return (
-        <div className="pt-[100px] bg-[#FAFAFA]">
+        <div className="sm:pt-[100px] pt-[80px] bg-[#FAFAFA]">
             <Container>
                 <div className="mx-auto max-w-[1280px] mb-[40px]">
                     <Subsheading className={'mb-[24px] text-center'}>
                         Unsere Floralen<br />Dienstleistungen
                     </Subsheading>
-                    <SectionText className={'text-center'}>
+                    <SectionText className={'text-center black'}>
                         Entdecken Sie unser Angebot an personalisierten Blumen-Erlebnissen, von Beratungen bis hin zu kreativen Workshops.
                     </SectionText>
                 </div>
@@ -44,17 +42,13 @@ const Floralen = ({ card }) => {
                         alt={t(card.title)}
                         className="object-cover sm:w-[600px] sm:h-[546px]    rounded-[24px] block max-xl:mx-auto"
                     />
-                    <div>
+                    <div >
                         <div data-aos="fade-up" className="flex items-center sm:gap-[16px] gap-2 mb-4">
                             {Icon && <Icon className="max-sm:size-[35px]"/>}
                             <h2 className="font-bold sm:text-[36px] text-[25px] leading-[150%] green ">
                                 {t(card.title)}
                             </h2>
                         </div>
-                        {/* <h3 className="font-medium text-[24px] leading-[150%] textgrey mb-[24px]">
-                            {t(card.data)}
-                        </h3> */}
-
                         <h3 className='font-medium leading-[150%] sm:text-[24px] text-[18px] textgrey'>
                             {t('unorderlist.toptext')}
                         </h3>

@@ -9,10 +9,10 @@ import Subsheading from './common/Subsheading'
 const Bereit = () => {
     const { t } = useTranslation()
     return (
-        <div className='pt-[80px]'>
+        <div className='sm:py-[80px] py-[60px]'>
             <Container className={''}>
 
-                <div className='w-full rounded-[40px] py-[87px] md:px-[30px] px-3 bg-[#EFF3F1] border border-[#ECF1EE] bg-no-repeat  overflow-hidden bg-cover shadow-box relative after:rounded-[40px] after:content-[" "] after:absolute  after:z-0  after-img ' >
+                <div className='w-full rounded-[40px] sm:py-[87px] py-[60px] md:px-[30px] px-3 bg-[#EFF3F1] border border-[#ECF1EE] bg-no-repeat  overflow-hidden bg-cover shadow-box relative after:rounded-[40px] after:content-[" "] after:absolute  after:z-0  after-img ' >
                     <img
                         src={flower}
                         alt="Floral background visual"
@@ -26,11 +26,11 @@ const Bereit = () => {
                             {t('journey.data')}
                         </Description>
                         <div className='flex items-center justify-center gap-[17.82px] flex-wrap '>
-                            <Button className={'flex gap-[11px] bggreen text-white items-center '}>
+                            <Button className={'flex sm:gap-[11px] gap-2 bggreen text-white items-center h-[56px]'}>
                                 {t('journeybutton.buttontext1')}
                                 <WhiteArrow />
                             </Button>
-                            <Button className={'flex gap-[11px] border-[1.27px] !py-[19px] items-center border-[#3E7651]  text-[#3E7651] '}>
+                            <Button className={'flex sm:gap-[11px] gap-2 border-[1.27px]  h-[56px] items-center border-[#3E7651]  text-[#3E7651] '}>
                                 {t('journeybutton.buttontext2')}
                                 <GreenArrow />
                             </Button>

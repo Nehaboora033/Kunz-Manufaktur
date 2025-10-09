@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import { WhiteArrow } from '../../utils/icons';
-import Button from './Button';
 
 const BackToTop = () => {
     const [show, setShow] = useState(false);

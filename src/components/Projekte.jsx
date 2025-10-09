@@ -11,7 +11,7 @@ import Subsheading from './common/Subsheading'
 const Projekte = () => {
     const { t } = useTranslation();
     return (
-        <div className="py-[100px]">
+        <div className="sm:py-[100px] py-[80px]">
             <Container>
                 <Subsheading className="text-center mb-6">
                     {t('swiper.title')}

@@ -19,7 +19,6 @@
     --gradient-hero: linear-gradient(180deg, #ECF1EE 0%, #FAFAFA 131.85%);
     --gradinet-box: linear-gradient(90deg, #ECF1EE -17.27%, #FAFAFA 100%);
     --shadow-box: 0px 293px 117px #ACADAA03, 0px 165px 99px #ACADAA0D, 0px 458px 128px 0px #ACADAA00;
-
 }
 
 .black {
@@ -42,7 +41,6 @@
     color: var(--color-linkgrey);
 }
 
-
 .herogradient {
     background: var(--gradient-hero);
     background-size: 100% 1110px;
@@ -61,17 +59,9 @@
     display: none;
 }
 
-.hide-scrollbar {
-    -ms-overflow-style: none;
-    /* IE and Edge */
-    scrollbar-width: none;
-    /* Firefox */
-}
-
 @media (min-width: 1100px) and (max-width: 1280px) {
     .translate-custom {
         transform: translateY(20%);
-        /* or translateX(20px); */
     }
 }
 
