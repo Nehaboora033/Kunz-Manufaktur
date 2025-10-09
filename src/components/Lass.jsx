@@ -12,7 +12,9 @@ import Input from './common/Input'
 import CountryInput from './common/CountryInput'
 
 const Lass = () => {
-  const { t } = useTranslation()
+
+  const { t } = useTranslation();
+  const [activeIndex, setActiveIndex] = useState(0);
 
   const initialValues = {
     firstName: '',
@@ -30,20 +32,21 @@ const Lass = () => {
   }
 
   const handleSubmit = (e) => {
-    e.preventDefault()
-    const errors = validate(formValues)
-    setFormErrors(errors)
+    e.preventDefault();
+
+    const errors = validate(formValues);
+    setFormErrors(errors);
+
+    // Log form values and errors
+    console.log('Form Values:', formValues);
+    console.log('Validation Errors:', errors);
 
     if (Object.keys(errors).length === 0) {
-      console.log('✅ Form submitted:', formValues)
-
-      // ✅ Log placeholder values of inputs and textarea
-      const inputs = document.querySelectorAll('input, textarea')
-      inputs.forEach((input) => {
-        console.log(`Placeholder for ${input.name || 'unnamed'}: ${input.placeholder}`)
-      })
+      console.log('✅ Form submitted successfully!');
+    } else {
+      console.log('❌ Form submission failed due to errors.');
     }
-  }
+  };
 
   const validate = (values) => {
     const errors = {}
@@ -75,7 +78,7 @@ const Lass = () => {
           <div className="flex justify-between xl:gap-[100px] gap-[30px] max-lg:flex-col gap-y-[50px]">
 
             {/* Left - Form */}
-            <div className="lg:max-w-[821px] w-full bg-[#F9FAFB] rounded-[40px] md:p-[40px] p-4">
+            <div data-aos="zoom-out-up" className="lg:max-w-[821px] w-full bg-[#F9FAFB] rounded-[40px] md:p-[40px] p-4">
               <form id="contact-form" onSubmit={handleSubmit}>
                 {/* Name */}
                 <Input
@@ -101,19 +104,8 @@ const Lass = () => {
                   />
 
                   {/* Telephone input */}
-                  {/* <Input
-                    placeholder="+49 123456789"
-                    type="tel"
-                    label={t('talk.phonenumber')}
-                    name="phoneNumber"
-                    value={formValues.phoneNumber}
-                    onChange={handleChange}
-                    error={formErrors.phoneNumber}
-                  /> */}
-
-
                   <CountryInput
-                    label="Phone Number"
+                    label={t('talk.phonenumber')}
                     name="phoneNumber"
                     value={formValues.phoneNumber}
                     onChange={handleChange}
@@ -136,22 +128,26 @@ const Lass = () => {
                       [-webkit-overflow-scrolling:touch]
                     "
                   >
-                    {Tabs.map((item, index) => (
-                      <Button
-                        key={index}
-                        className={`
-                          !px-4 !py-[10px] !rounded-[50px]
-                          transition-all duration-200
-                          !font-normal !text-[16px] !leading-[20px]
-                          ${index === 0
-                            ? 'bggreen text-white border-none'
-                            : 'border border-[#454544] text-black bg-transparent'
-                          }
-                        `}
-                      >
-                        {t(item.name)}
-                      </Button>
-                    ))}
+                    {Tabs.map((item, index) => {
+                      const isActive = index === activeIndex;
+
+                      return (
+                        <div
+                          key={index}
+                          onClick={() => setActiveIndex(index)}
+                          className={`
+              px-4 py-[10px] rounded-[50px] transition-all duration-300 whitespace-nowrap
+              font-normal text-[16px] leading-[20px] cursor-pointer
+              ${isActive
+                              ? 'bggreen text-white border-none'       // Active tab
+                              : 'border border-[#454544] black bg-transparent' // Normal tab
+                            }
+            `}
+                        >
+                          {t(item.name)}
+                        </div>
+                      );
+                    })}
                   </div>
                 </div>
 
@@ -223,7 +219,7 @@ const Lass = () => {
               </div>
 
               {/* Flower Image */}
-              <img
+              <img data-aos="fade-up"
                 src={flower}
                 alt="flower"
                 className="object-cover absolute lg:bottom-[-80px] lg:right-[-180px] bottom-[-30px] right-[-100px] max-lg:w-[400px] max-md:w-[300px] max-sm:hidden block pointer-events-none"

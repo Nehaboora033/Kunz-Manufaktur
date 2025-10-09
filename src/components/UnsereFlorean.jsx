@@ -39,13 +39,13 @@ const Floralen = ({ card }) => {
 
                 {/* dynamic card render */}
                 <div className="border border-[#ECF1EE] rounded-[40px] p-3 md:p-6 flex gap-[24px] max-xl:flex-col shadow-box">
-                    <img
+                    <img data-aos="fade-up"
                         src={card.image}
                         alt={t(card.title)}
                         className="object-cover sm:w-[600px] sm:h-[546px]    rounded-[24px] block max-xl:mx-auto"
                     />
                     <div>
-                        <div className="flex items-center sm:gap-[16px] gap-2 mb-4">
+                        <div data-aos="fade-up" className="flex items-center sm:gap-[16px] gap-2 mb-4">
                             {Icon && <Icon className="max-sm:size-[35px]"/>}
                             <h2 className="font-bold sm:text-[36px] text-[25px] leading-[150%] green ">
                                 {t(card.title)}

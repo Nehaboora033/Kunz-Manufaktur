@@ -12,7 +12,7 @@ const CountryInput = ({ label, value, error, onChange, name }) => {
                 </label>
             )}
             <PhoneInput
-                country={'in'} // default country
+                country={'de'} 
                 value={value}
                 onChange={(val) => onChange({ target: { name, value: val } })}
                 inputStyle={{

@@ -121,7 +121,7 @@ export const Footer_Links = [
     },
     {
         key: 'linkservices.flower',
-        link: '/',
+        link: 'unsere',
     },
     {
         key: 'linkservices.workshops',

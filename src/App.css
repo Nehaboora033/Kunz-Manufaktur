@@ -74,3 +74,7 @@
         /* or translateX(20px); */
     }
 }
+
+.hover-shadow-green:hover {
+    box-shadow: 0 4px 15px rgba(62, 118, 81, 0.5);
+}

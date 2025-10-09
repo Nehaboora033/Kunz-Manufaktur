@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import {  WhiteArrow } from '../../utils/icons';
+import { WhiteArrow } from '../../utils/icons';
 import Button from './Button';
 
 const BackToTop = () => {
@@ -19,12 +19,12 @@ const BackToTop = () => {
     if (!show) return null;
     return (
         <div>
-            <Button
+            <button
                 onClick={handleBackToTop}
                 aria-label="Back to top"
-                className="!fixed flex justify-center items-center rotate-[-90deg] bottom-8  right-8 size-[50px] text-xl z-[9] bg-[#325E41] text-white rounded-full shadow-lg cursor-pointer transition-all hover:scale-110 duration-300 ease-linear">
-                <WhiteArrow />
-            </Button>
+                className="!fixed border border-white flex justify-center items-center rotate-[-90deg] bottom-[70px]  right-8 size-[50px] text-xl z-[9] bggreen text-white rounded-full  cursor-pointer transition-all hover:scale-110 duration-300 ease-linear">
+                <WhiteArrow/>
+            </button>
         </div>
     )
 }

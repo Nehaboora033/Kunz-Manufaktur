@@ -12,7 +12,7 @@ const Footer = () => {
     <div className='bggreen py-[40px] mt-[100px] '>
       <div className='text-white max-w-[1865px] mx-auto px-3'>
         <div className='flex flex-wrap gap-[40px]  '>
-          <div className='max-w-[500px] w-full'>
+          <div data-aos="fade-right" className='max-w-[500px] w-full'>
             <div className='flex gap-4 items-center mb-8'>
               <FooterLogo />
               <h3 className='font-semibold text-[22px] leading-[120%] max-w-[122px] '>
@@ -24,7 +24,7 @@ const Footer = () => {
               {t('footer.text')}
             </Text>
           </div>
-          <div className='flex-1 flex min-[1095px]:gap-[40px] gap-5 max-sm:flex-wrap'>
+          <div data-aos="fade-left" className='flex-1 flex min-[1095px]:gap-[40px] gap-5 max-sm:flex-wrap'>
             {/* services */}
             <div className='sm:w-1/3 min-[430px]:w-[48%] w-full '>
               <Text className='!font-bold md:mb-[32px] mb-3'>
@@ -69,7 +69,7 @@ const Footer = () => {
           </div>
         </div>
         {/* copyright part  */}
-        <div className='mt-6 flex justify-between flex-wrap gap-y-[12px]'>
+        <div  className='mt-6 flex justify-between flex-wrap gap-y-[12px]'>
           <Text>
             {t('footer.copyright')}
           </Text>

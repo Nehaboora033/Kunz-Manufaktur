@@ -24,7 +24,7 @@ const Cardsection = () => {
                     {TopCards.map((item, index) => {
                         return (
                             <div onClick={() => handleCardClick(item.id)} className='shadow-box justify-between border border-[#ECF1EE] rounded-[40px] xl:p-6  p-3 overflow-hidden  flex flex-col  bg-white' key={index}>
-                                <img
+                                <img data-aos="fade-up"
                                     src={item.image}
                                     alt={item.key}
                                     className=' object-cover rounded-[24px]  md:mb-[24px] mb-4 '
@@ -55,7 +55,7 @@ const Cardsection = () => {
                             key={item.id} onClick={() => handleCardClick(item.id)}
                             className='shadow-box border border-[#ECF1EE] justify-between rounded-[40px] xl:p-6 p-3 overflow-hidden flex flex-col bg-white'
                         >
-                            <img
+                            <img data-aos="fade-up"
                                 src={item.image}
                                 alt={item.key}
                                 className='object-cover rounded-[24px] md:mb-[24px] mb-4'
