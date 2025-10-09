@@ -180,6 +180,10 @@ const en = {
         bottomtext: 'We discuss your ideas, assess your space, and create a customized plan that will make your floral dreams come true.',
         toptext: 'Every room has its own character, and every client has individual preferences. Our personalized consultations ensure that your floral arrangements are a perfect fit for your surroundings and lifestyle.',
     },
+    meta: {
+        tittle: ' Order flowers online - Fast & Reliable',
+        description: 'Beautiful bouquets, creative arrangements, and reliable delivery. Order online and surprise your loved ones.',
+    }
 
 
 }
