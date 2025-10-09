@@ -5,18 +5,17 @@ import Projekte from '../components/Projekte'
 import Bereit from '../components/Bereit'
 import Lass from '../components/Lass'
 import Workshops from '../components/Workshops'
-import Flower from '../components/Flower'
 
 const Startseite = () => {
   return (
     <>
       <Hero />
-      {/* <Flower /> */}
       <Unsere />
       <Workshops />
       <Bereit />
       <Projekte />
       <Lass />
+    
     </>
   )
 }
