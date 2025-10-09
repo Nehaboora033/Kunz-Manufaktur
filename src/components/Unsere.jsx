@@ -2,12 +2,12 @@ import React from 'react'
 import Container from './common/Container'
 import { CardsData } from '../utils/helper'
 import SectionText from './common/SectionText'
-import SubHeading from './common/SubHeading'
 import { useTranslation } from 'react-i18next'
 import Button from './common/Button'
 import { GreenArrow, Heart, WhiteArrow } from '../utils/icons'
 import Description from './common/Description'
 import { useNavigate } from 'react-router-dom'
+import Subsheading from './common/Subsheading'
 
 const Unsere = () => {
 
@@ -27,9 +27,9 @@ const Unsere = () => {
                     {/* Left Section */}
                     <div className='max-w-[770.5px] w-full'>
                         <div className='sm:mb-[100px] mb-[60px]'>
-                            <SubHeading className={'w-full mb-[24px] max-sm:text-center'}>
+                            <Subsheading className={'w-full mb-[24px] max-sm:text-center'}>
                                 {t('services.title')}
-                            </SubHeading>
+                            </Subsheading>
                             <SectionText className={'mb-6 max-sm:text-center'}>
                                 {t('services.text')}
                             </SectionText>

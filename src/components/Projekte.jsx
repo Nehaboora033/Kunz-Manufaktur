@@ -1,5 +1,4 @@
 import React from 'react'
-import SubHeading from './common/subHeading'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Projekte_Data } from '../utils/helper'
 import 'swiper/css'
@@ -7,15 +6,16 @@ import { Autoplay } from 'swiper/modules'
 import { useTranslation } from 'react-i18next'
 import Container from './common/Container'
 import SectionText from './common/SectionText'
+import Subsheading from './common/Subsheading'
 
 const Projekte = () => {
     const { t } = useTranslation();
     return (
         <div className="py-[100px]">
             <Container>
-                <SubHeading className="text-center mb-6">
+                <Subsheading className="text-center mb-6">
                     {t('swiper.title')}
-                </SubHeading>
+                </Subsheading>
                 <SectionText className={'text-center black mb-[60px]  mx-auto'}>
                     {t('swiper.data')}
                 </SectionText>

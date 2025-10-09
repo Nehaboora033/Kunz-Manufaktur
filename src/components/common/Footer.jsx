@@ -1,6 +1,5 @@
 import React from 'react'
 import { FooterLogo } from '../../utils/icons'
-import Description from './Description'
 import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
 import {  Footer_contactInfo, Footer_DataLink, Footer_Info, Footer_Links } from '../../utils/helper'

@@ -1,10 +1,10 @@
 import Container from './common/Container'
-import SubHeading from './common/SubHeading'
 import Description from './common/Description'
 import Button from './common/Button'
 import { GreenArrow, WhiteArrow } from '../utils/icons'
 import { useTranslation } from 'react-i18next'
 import flower from '../assets/png/greyflower.png'
+import Subsheading from './common/Subsheading'
 
 const Bereit = () => {
     const { t } = useTranslation()
@@ -19,9 +19,9 @@ const Bereit = () => {
                         className="absolute inset-y-0 right-[-250px] w-full h-full object-cover object-right opacity-100 pointer-events-none sm:block hidden"
                     />
                     <div className='relative flex z-[10] flex-col items-center justify-center'>
-                        <SubHeading className={'mb-[24px] text-center'}>
+                        <Subsheading className={'mb-[24px] text-center'}>
                             {t('journey.title')}
-                        </SubHeading>
+                        </Subsheading>
                         <Description className={'text-center mb-[24px] max-w-[932px] black'}>
                             {t('journey.data')}
                         </Description>

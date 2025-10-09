@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import Container from './common/Container'
-import SubHeading from './common/SubHeading'
 import { useTranslation } from 'react-i18next'
 import SectionText from './common/SectionText'
 import { Footer_Info, Social_Links, Tabs, Talk_Contact } from '../utils/helper'
@@ -10,6 +9,7 @@ import flower from '../assets/webp/whiteflower.webp'
 import Button from './common/Button'
 import Input from './common/Input'
 import CountryInput from './common/CountryInput'
+import Subsheading from './common/Subsheading'
 
 const Lass = () => {
 
@@ -66,9 +66,9 @@ const Lass = () => {
     <div className="py-[100px]">
       <Container className="overflow-hidden">
         {/* Heading Section */}
-        <SubHeading className="text-center mb-[24px]">
+        <Subsheading className="text-center mb-[24px]">
           {t('talk.title')}
-        </SubHeading>
+        </Subsheading>
         <SectionText className="text-center mb-[60px]">
           {t('talk.data')}
         </SectionText>

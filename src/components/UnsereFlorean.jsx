@@ -1,11 +1,11 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
-import SubHeading from './common/SubHeading'
 import Container from './common/Container'
 import SectionText from './common/SectionText'
 import Button from './common/Button'
 import { WhiteArrow } from '../utils/icons'
 import { Unorder_List } from '../utils/helper'
+import Subsheading from './common/Subsheading'
 
 
 const Floralen = ({ card }) => {
@@ -29,9 +29,9 @@ const Floralen = ({ card }) => {
         <div className="pt-[100px] bg-[#FAFAFA]">
             <Container>
                 <div className="mx-auto max-w-[1280px] mb-[40px]">
-                    <SubHeading className={'mb-[24px] text-center'}>
+                    <Subsheading className={'mb-[24px] text-center'}>
                         Unsere Floralen<br />Dienstleistungen
-                    </SubHeading>
+                    </Subsheading>
                     <SectionText className={'text-center'}>
                         Entdecken Sie unser Angebot an personalisierten Blumen-Erlebnissen, von Beratungen bis hin zu kreativen Workshops.
                     </SectionText>

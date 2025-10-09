@@ -1,6 +1,5 @@
 import React from 'react'
 import Container from './common/Container'
-import SubHeading from './common/SubHeading'
 import SectionText from './common/SectionText'
 import { useTranslation } from 'react-i18next'
 import { CardsData } from '../utils/helper'
@@ -8,6 +7,7 @@ import Description from './common/Description'
 import { Time, Dates, Location, Customer, WhiteArrow } from '../utils/icons'
 import Button from './common/Button'
 import {  useNavigate } from 'react-router-dom'
+import Subsheading from './common/Subsheading'
 
 const Workshops = () => {
     const { t } = useTranslation();
@@ -22,9 +22,9 @@ const Workshops = () => {
     return (
         <div className='py-[100px]'>
             <Container>
-                <SubHeading className='md:mb-6 mb-4 max-md:text-center' >
+                <Subsheading className='md:mb-6 mb-4 max-md:text-center' >
                     {t('workshops.title')}
-                </SubHeading>
+                </Subsheading>
                 <SectionText className='max-w-[1000px] w-full md:mb-[60px] mb-[35px] max-md:text-center'>
                     {t('workshops.text')}
                 </SectionText>
