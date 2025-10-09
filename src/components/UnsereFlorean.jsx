@@ -27,11 +27,13 @@ const Floralen = ({ card }) => {
         <div className="sm:pt-[100px] pt-[80px] bg-[#FAFAFA]">
             <Container>
                 <div className="mx-auto max-w-[1280px] mb-[40px]">
-                    <Subsheading className={'mb-[24px] text-center'}>
-                        Unsere Floralen<br />Dienstleistungen
-                    </Subsheading>
+                    <div className='xl:max-w-[415px] w-full mx-auto'>
+                        <Subsheading className={'mb-[24px] text-center '}>
+                            {t('unserehero.heading')}
+                        </Subsheading>
+                    </div>
                     <SectionText className={'text-center black'}>
-                        Entdecken Sie unser Angebot an personalisierten Blumen-Erlebnissen, von Beratungen bis hin zu kreativen Workshops.
+                        {t('unserehero.text')}
                     </SectionText>
                 </div>
 
@@ -44,7 +46,7 @@ const Floralen = ({ card }) => {
                     />
                     <div >
                         <div data-aos="fade-up" className="flex items-center sm:gap-[16px] gap-2 mb-4">
-                            {Icon && <Icon className="max-sm:size-[35px]"/>}
+                            {Icon && <Icon className="max-sm:size-[35px]" />}
                             <h2 className="font-bold sm:text-[36px] text-[25px] leading-[150%] green ">
                                 {t(card.title)}
                             </h2>

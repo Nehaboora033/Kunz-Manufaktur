@@ -64,7 +64,7 @@ const de = {
     },
     journey: {
         title: 'Bereit, Ihre florale Reise zu erkunden?',
-        data: 'Egal, ob Sie eine einmalige Beratung oder ein fortlaufendes Abonnement suchen, wir sind hier, um Ihre Vision mit persönlicher Betreuung und Aufmerksamkeit zum Leben zu erwecken.'
+        data: 'Egal, ob Sie eine einmalige Beratung oder ein fortlaufendes Abonnement suchen, wir sind hier, um Ihre Vision mit persönlicher Betreuung und Aufmerksamkeit zum Leben zu erwecken.',
     },
 
     journeybutton: {
@@ -74,7 +74,7 @@ const de = {
     talk: {
         title: " Lass uns über Blumen sprechen",
         data: ' Ob es eine Frage oder eine individuelle Beratung ist, wir helfen Ihnen gerne weiter.',
-        buttontext: 'Send Message',
+        buttontext: 'Nachricht senden',
         name: 'Vollständiger Name',
         mail: 'E-mail',
         phonenumber: 'Telefonnummer',
@@ -105,7 +105,7 @@ const de = {
     services: {
         title: ' Unsere Floralen Dienstleistungen',
         text: 'Entdecken Sie unser Angebot an personalisierten Blumen-Erlebnissen, von Beratungen bis hin zu kreativen Workshops.',
-        buttontext: 'Show all services',
+        buttontext: 'Alle Dienstleistungen anzeigen',
     },
     cards: {
         1: {
@@ -177,11 +177,11 @@ const de = {
         third: 'Maßgeschneiderte Designs',
         fourth: 'Stilberatung',
         bottomtext: 'Wir besprechen Ihre Vorstellungen, begutachten Ihren Raum und erstellen einen individuellen Plan, der Ihre Blumenträume wahr werden lässt.',
-        toptexet: 'Jeder Raum hat seinen eigenen Charakter, und jeder Kunde hat individuelle Vorlieben.Unsere persönlichen Beratungsgespräche stellen sicher, dass Ihre Blumenarrangements perfekt zu Ihrer Umgebung und Ihrem Lebensstil passen.',
+        toptext: 'Jeder Raum hat seinen eigenen Charakter, und jeder Kunde hat individuelle Vorlieben.Unsere persönlichen Beratungsgespräche stellen sicher, dass Ihre Blumenarrangements perfekt zu Ihrer Umgebung und Ihrem Lebensstil passen.',
     },
-    meta: {
-        tittle: 'Blumen online bestellen – Schnell & Zuverlässig',
-        description: 'Schöne Blumensträuße, kreative Arrangements und zuverlässige Lieferung. Bestellen Sie online und überraschen Sie Ihre Liebsten.',
+    unserehero: {
+        heading: 'Unsere Floralen Dienstleistungen',
+        text: 'Entdecken Sie unser Angebot an personalisierten Blumen-Erlebnissen, von Beratungen bis hin zu kreativen Workshops.',
     },
 }
 
