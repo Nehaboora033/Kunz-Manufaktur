@@ -10,6 +10,7 @@ import Button from './common/Button'
 import Input from './common/Input'
 import CountryInput from './common/CountryInput'
 import Subsheading from './common/Subsheading'
+import GreenButton from './common/GreenButton'
 
 const Lass = () => {
 
@@ -175,9 +176,9 @@ const Lass = () => {
                 </div>
 
                 {/* Submit Button */}
-                <Button className="bggreen h-[52px] text-white !py-[16px] w-full mt-6">
+                <GreenButton className={' mt-6 w-full'}>
                   {t('talk.buttontext')}
-                </Button>
+                </GreenButton>
               </form>
             </div>
 

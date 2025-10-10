@@ -8,6 +8,8 @@ import { GreenArrow, Heart, WhiteArrow } from '../utils/icons'
 import Description from './common/Description'
 import { useNavigate } from 'react-router-dom'
 import Subsheading from './common/Subsheading'
+import TransparentButton from './common/TransparentButton'
+import GreenButton from './common/GreenButton'
 
 const Unsere = () => {
 
@@ -34,10 +36,13 @@ const Unsere = () => {
                                 {t('services.text')}
                             </SectionText>
                             <div className='max-sm:flex justify-center'>
-                                <Button className={'border border-[#3E7651] green flex items-center gap-2 h-[56px]'}>
+                                {/* <Button className={'border border-[#3E7651] green flex items-center gap-2 h-[56px]'}>
                                     {t('services.buttontext')}
                                     <GreenArrow />
-                                </Button>
+                                </Button> */}
+                                <TransparentButton>
+                                    {t('services.buttontext')}
+                                </TransparentButton>
                             </div>
                         </div>
 
@@ -57,10 +62,14 @@ const Unsere = () => {
                                         </div>
                                         <Description className='textgrey md:mb-6 mb-4'>{t(leftCard.data)} </Description>
                                     </div>
-                                    <Button className={'bggreen flex items-center gap-2 text-white justify-center'}>
+                                    {/* <Button className={'bggreen flex items-center gap-2 text-white justify-center'}>
                                         {t(leftCard.buttontext)}
                                         <WhiteArrow />
-                                    </Button>
+                                    </Button> */}
+
+                                    <GreenButton>
+                                        {t(leftCard.buttontext)}
+                                    </GreenButton>
                                 </div>
                             </div>
                         )}
@@ -84,10 +93,13 @@ const Unsere = () => {
 
                                             <Description className='textgrey md:mb-6 mb-4'>  {t(item.data)}</Description>
                                         </div>
-                                        <Button className={'bggreen flex items-center gap-2 text-white justify-center'}>
+                                        {/* <Button className={'bggreen flex items-center gap-2 text-white justify-center'}>
                                             {t(item.buttontext)}
                                             <WhiteArrow />
-                                        </Button>
+                                        </Button> */}
+                                        <GreenButton>
+                                            {t(leftCard.buttontext)}
+                                        </GreenButton>
                                     </div>
                                 </div>
                             )

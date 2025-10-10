@@ -8,6 +8,8 @@ import { Time, Dates, Location, Customer, WhiteArrow, GreenArrow } from '../util
 import Button from './common/Button'
 import { useNavigate } from 'react-router-dom'
 import Subsheading from './common/Subsheading'
+import GreenButton from './common/GreenButton'
+import TransparentButton from './common/TransparentButton'
 
 const Workshops = () => {
     const { t } = useTranslation();
@@ -70,20 +72,26 @@ const Workshops = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <Button className='bggreen text-white flex gap-2 h-[56px]'>
+                                {/* <Button className='bggreen text-white flex gap-2 h-[56px]'>
                                     {t(item.buttontext)}
                                     <WhiteArrow />
-                                </Button>
+                                </Button> */}
+                                <GreenButton>
+                                    {t(item.buttontext)}
+                                </GreenButton>
                             </div>
 
                         </div>
                     ))}
                 </div>
                 <div className='flex justify-center'>
-                    <Button className={'flex gap-[11px] border-[1.27px] sm:mt-[60px] mt-[20px]  h-[56px] items-center border-[#3E7651]  text-[#3E7651] '}>
+                    {/* <Button className={'flex gap-[11px] border-[1.27px] sm:mt-[60px] mt-[20px]  h-[56px] items-center border-[#3E7651]  text-[#3E7651] '}>
                         {t('workshops.button')}
                         <GreenArrow />
-                    </Button>
+                    </Button> */}
+                    <TransparentButton className={'sm:mt-[60px] mt-[20px]'}>
+                        {t('workshops.button')}
+                    </TransparentButton>
                 </div>
             </Container>
         </div>

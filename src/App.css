@@ -59,9 +59,24 @@
     display: none;
 }
 
+/* hover properties  */
+
 .hover-shadow-green:hover {
     box-shadow: 0 4px 15px rgba(62, 118, 81, 0.5);
 }
+
+.hover-bggreen:hover {
+    background-color: #3E7651;
+}
+
+.hover-textwhite:hover {
+    color: white !important;
+}
+
+.hover-transparent:hover {
+    background: transparent !important;
+}
+
 
 @media (min-width: 1024px) and (max-width: 1235px) {
     .margin-custom {
