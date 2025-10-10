@@ -3,8 +3,7 @@ import Container from './common/Container'
 import { CardsData } from '../utils/helper'
 import SectionText from './common/SectionText'
 import { useTranslation } from 'react-i18next'
-import Button from './common/Button'
-import { GreenArrow, Heart, WhiteArrow } from '../utils/icons'
+import { Heart } from '../utils/icons'
 import Description from './common/Description'
 import { useNavigate } from 'react-router-dom'
 import Subsheading from './common/Subsheading'
@@ -36,10 +35,6 @@ const Unsere = () => {
                                 {t('services.text')}
                             </SectionText>
                             <div className='max-sm:flex justify-center'>
-                                {/* <Button className={'border border-[#3E7651] green flex items-center gap-2 h-[56px]'}>
-                                    {t('services.buttontext')}
-                                    <GreenArrow />
-                                </Button> */}
                                 <TransparentButton>
                                     {t('services.buttontext')}
                                 </TransparentButton>
@@ -62,11 +57,6 @@ const Unsere = () => {
                                         </div>
                                         <Description className='textgrey md:mb-6 mb-4'>{t(leftCard.data)} </Description>
                                     </div>
-                                    {/* <Button className={'bggreen flex items-center gap-2 text-white justify-center'}>
-                                        {t(leftCard.buttontext)}
-                                        <WhiteArrow />
-                                    </Button> */}
-
                                     <GreenButton>
                                         {t(leftCard.buttontext)}
                                     </GreenButton>
@@ -93,10 +83,6 @@ const Unsere = () => {
 
                                             <Description className='textgrey md:mb-6 mb-4'>  {t(item.data)}</Description>
                                         </div>
-                                        {/* <Button className={'bggreen flex items-center gap-2 text-white justify-center'}>
-                                            {t(item.buttontext)}
-                                            <WhiteArrow />
-                                        </Button> */}
                                         <GreenButton>
                                             {t(leftCard.buttontext)}
                                         </GreenButton>

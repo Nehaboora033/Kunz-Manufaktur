@@ -1,7 +1,5 @@
 import Container from './common/Container'
 import Description from './common/Description'
-import Button from './common/Button'
-import { GreenArrow, WhiteArrow } from '../utils/icons'
 import { useTranslation } from 'react-i18next'
 import flower from '../assets/png/greyflower.png'
 import Subsheading from './common/Subsheading'
@@ -28,15 +26,7 @@ const Bereit = () => {
                             {t('journey.data')}
                         </Description>
                         <div className='flex items-center justify-center gap-[17.82px] flex-wrap '>
-                            {/* <Button className={'flex sm:gap-[11px] gap-2 bggreen text-white items-center h-[56px]'}>
-                                {t('journeybutton.buttontext1')}
-                                <WhiteArrow />
-                            </Button>
-                            <Button className={'flex sm:gap-[11px] gap-2 border-[1.27px]  h-[56px] items-center border-[#3E7651]  text-[#3E7651] '}>
-                                {t('journeybutton.buttontext2')}
-                                <GreenArrow />
-                            </Button> */}
-                            <GreenButton className={''}>
+                            <GreenButton>
                                 {t('journeybutton.buttontext1')}
                             </GreenButton>
                             <TransparentButton>

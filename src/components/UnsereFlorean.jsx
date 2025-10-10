@@ -2,8 +2,6 @@ import React from 'react'
 import { useTranslation } from 'react-i18next'
 import Container from './common/Container'
 import SectionText from './common/SectionText'
-import Button from './common/Button'
-import { WhiteArrow } from '../utils/icons'
 import { Unorder_List } from '../utils/helper'
 import Subsheading from './common/Subsheading'
 import GreenButton from './common/GreenButton'
@@ -69,11 +67,6 @@ const Floralen = ({ card }) => {
                         <h3 className='font-medium leading-[150%] sm:text-[24px] text-[18px] textgrey'>
                             {t('unorderlist.bottomtext')}
                         </h3>
-                        {/* <Button className="bggreen flex items-center gap-2 text-white justify-center mt-[24px] max-[401px]:w-full">
-                            {t(card.buttontext)}
-                            <WhiteArrow />
-                        </Button> */}
-
                         <GreenButton className={'mt-[24px] max-[401px]:w-full'}>
                             {t(card.buttontext)}
                         </GreenButton>

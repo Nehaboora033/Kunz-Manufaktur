@@ -4,8 +4,6 @@ import { CardsData } from '../utils/helper'
 import { useTranslation } from 'react-i18next'
 import SectionText from './common/SectionText'
 import Description from './common/Description'
-import { WhiteArrow } from '../utils/icons'
-import Button from './common/Button'
 import { useNavigate } from 'react-router-dom'
 import GreenButton from './common/GreenButton'
 
@@ -40,10 +38,6 @@ const Cardsection = () => {
                                         </div>
                                         <Description className='textgrey md:mb-6 mb-4'>  {t(item.data)}</Description>
                                     </div>
-                                    {/* <Button className={'bggreen h-[56px]  flex items-center gap-2 text-white justify-center'}>
-                                        {t(item.buttontext)}
-                                        <WhiteArrow />
-                                    </Button> */}
                                     <GreenButton className={''}>
                                         {t(item.buttontext)}
                                     </GreenButton>
@@ -77,10 +71,6 @@ const Cardsection = () => {
                                         {t(item.data)}
                                     </Description>
                                 </div>
-                                {/* <Button className='bggreen h-[56px]  flex items-center gap-2 text-white justify-center'>
-                                    {t(item.buttontext)}
-                                    <WhiteArrow />
-                                </Button> */}
                                 <GreenButton>
                                     {t(item.buttontext)}
                                 </GreenButton>

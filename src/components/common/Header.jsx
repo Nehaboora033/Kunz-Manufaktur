@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { LogoIcon } from '../../utils/icons'
-import Button from './Button'
 import { Navlinks } from '../../utils/helper'
 import Hamburger from 'hamburger-react'
 import GreenButton from './GreenButton'
@@ -68,10 +67,7 @@ const Header = () => {
                         </button>
                     </div>
                     <div className='flex items-center'>
-                        {/* <Button className="sm:!py-[16px] sm:w-[182px] sm:h-[52px] max-sm:px-3 bggreen text-white ">
-                            {t('header.orderButton')}
-                        </Button> */}
-                        <GreenButton className={'max-sm:py-3 sm:w-[182px] sm:h-[52px] max-sm:px-2 !sm:gap-2 !gap-1 max-[375px]:text-[14px]'}>
+                        <GreenButton showArrow={false} className={'max-sm:py-3 sm:w-[182px] !h-[52px] max-sm:px-2  '}>
                             {t('header.orderButton')}
                         </GreenButton>
                         <button

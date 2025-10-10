@@ -4,8 +4,7 @@ import SectionText from './common/SectionText'
 import { useTranslation } from 'react-i18next'
 import { CardsData } from '../utils/helper'
 import Description from './common/Description'
-import { Time, Dates, Location, Customer, WhiteArrow, GreenArrow } from '../utils/icons'
-import Button from './common/Button'
+import { Time, Dates, Location, Customer} from '../utils/icons'
 import { useNavigate } from 'react-router-dom'
 import Subsheading from './common/Subsheading'
 import GreenButton from './common/GreenButton'
@@ -72,10 +71,6 @@ const Workshops = () => {
                                         </div>
                                     </div>
                                 </div>
-                                {/* <Button className='bggreen text-white flex gap-2 h-[56px]'>
-                                    {t(item.buttontext)}
-                                    <WhiteArrow />
-                                </Button> */}
                                 <GreenButton>
                                     {t(item.buttontext)}
                                 </GreenButton>
@@ -85,10 +80,6 @@ const Workshops = () => {
                     ))}
                 </div>
                 <div className='flex justify-center'>
-                    {/* <Button className={'flex gap-[11px] border-[1.27px] sm:mt-[60px] mt-[20px]  h-[56px] items-center border-[#3E7651]  text-[#3E7651] '}>
-                        {t('workshops.button')}
-                        <GreenArrow />
-                    </Button> */}
                     <TransparentButton className={'sm:mt-[60px] mt-[20px]'}>
                         {t('workshops.button')}
                     </TransparentButton>
