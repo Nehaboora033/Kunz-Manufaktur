@@ -2,7 +2,7 @@ import React from 'react'
 import { FooterLogo } from '../../utils/icons'
 import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
-import {  Footer_contactInfo, Footer_DataLink, Footer_Info, Footer_Links } from '../../utils/helper'
+import { Footer_contactInfo, Footer_DataLink, Footer_Info, Footer_Links } from '../../utils/helper'
 import Text from './Text'
 
 const Footer = () => {
@@ -11,14 +11,15 @@ const Footer = () => {
     <div className='bggreen py-[40px]'>
       <div className='text-white max-w-[1865px] mx-auto px-3'>
         <div className='flex flex-wrap gap-[40px]  '>
-          <div  data-aos="fade-up" className='max-w-[500px] w-full'>
-            <div className='flex gap-4 items-center mb-8'>
-              <FooterLogo />
-              <h3 className='font-semibold text-[22px] leading-[120%] max-w-[122px] '>
-                Kunz
-                Manufaktur
-              </h3>
-            </div>
+          <div data-aos="fade-up" className='max-w-[500px] w-full'>
+            <Link to={'/'} className='flex gap-4 items-center mb-8'>
+                <FooterLogo />
+                <h3 className='font-semibold text-[22px] leading-[120%] max-w-[122px] '>
+                  Kunz
+                  Manufaktur
+                </h3>
+            </Link>
+
             <Text>
               {t('footer.text')}
             </Text>
@@ -68,7 +69,7 @@ const Footer = () => {
           </div>
         </div>
         {/* copyright part  */}
-        <div  className='mt-6 flex justify-between flex-wrap gap-y-[12px]'>
+        <div className='mt-6 flex justify-between flex-wrap gap-y-[12px]'>
           <Text>
             {t('footer.copyright')}
           </Text>

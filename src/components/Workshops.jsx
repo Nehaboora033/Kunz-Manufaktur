@@ -28,11 +28,11 @@ const Workshops = () => {
                 <SectionText className='max-w-[1000px] w-full md:mb-[60px] mb-[35px] max-md:text-center black'>
                     {t('workshops.text')}
                 </SectionText>
-                <div className='grid md:grid-cols-2 grid-cols-1 xl:gap-[40px] gap-[24px]'>
+                <div className='grid md:grid-cols-2 grid-cols-1 xl:gap-[40px] gap-[24px] cursor-pointer'>
                     {workshopCards.map((item, index) => (
                         <div
                             key={index} onClick={() => handleCardClick(item.id)}
-                            className='shadow-box border border-[#ECF1EE] justify-between rounded-[40px] xl:p-6  p-3 overflow-hidden  flex flex-col  bg-white'>
+                            className='shadow-box hover-shadow-green border border-[#ECF1EE] justify-between rounded-[40px] xl:p-6  p-3 overflow-hidden  flex flex-col  bg-white'>
 
                             <img data-aos="fade-up"
                                 src={item.image}

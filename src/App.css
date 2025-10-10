@@ -63,14 +63,6 @@
     box-shadow: 0 4px 15px rgba(62, 118, 81, 0.5);
 }
 
-
-/* @media (min-width: 1100px) and (max-width: 1280px) {
-    .translate-custom {
-        transform: translateY(20%);
-    }
-} */
-
-
 @media (min-width: 1024px) and (max-width: 1235px) {
     .margin-custom {
         margin-top: 0;

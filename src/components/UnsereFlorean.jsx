@@ -38,11 +38,11 @@ const Floralen = ({ card }) => {
                 </div>
 
                 {/* dynamic card render */}
-                <div className="border border-[#ECF1EE] rounded-[40px] p-3 md:p-6 flex gap-[24px] max-xl:flex-col shadow-box">
+                <div className="border cursor-pointer  border-[#ECF1EE] rounded-[40px] p-3 md:p-6 flex gap-[24px] max-xl:flex-col shadow-box">
                     <img data-aos="fade-up"
                         src={card.image}
                         alt={t(card.title)}
-                        className="object-cover sm:w-[600px] sm:h-[546px]    rounded-[24px] block max-xl:mx-auto"
+                        className="object-cover sm:w-[600px] rounded-[24px] block max-xl:mx-auto"
                     />
                     <div >
                         <div data-aos="fade-up" className="flex items-center sm:gap-[16px] gap-2 mb-4">

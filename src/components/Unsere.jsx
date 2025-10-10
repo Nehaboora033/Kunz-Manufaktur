@@ -42,7 +42,7 @@ const Unsere = () => {
                         </div>
 
                         {leftCard && (
-                            <div onClick={() => handleCardClick(leftCard.id)} className='shadow-box justify-between border border-[#ECF1EE] rounded-[40px] xl:p-6  p-3 overflow-hidden  flex flex-col  bg-white'>
+                            <div onClick={() => handleCardClick(leftCard.id)} className='shadow-box hover-shadow-green cursor-pointer justify-between border border-[#ECF1EE] rounded-[40px] xl:p-6  p-3 overflow-hidden  flex flex-col  bg-white'>
                                 <img data-aos="fade-up"
                                     src={leftCard.image}
                                     alt={leftCard.key}
@@ -68,7 +68,7 @@ const Unsere = () => {
                     <div className='max-w-[770.5px] w-full gap-y-[60px] flex flex-col'>
                         {rightCards.map((item, index) => {
                             return (
-                                <div onClick={() => handleCardClick(item.id)} className='shadow-box justify-between border border-[#ECF1EE] rounded-[40px] xl:p-6  p-3 overflow-hidden  flex flex-col  bg-white' key={index}>
+                                <div onClick={() => handleCardClick(item.id)} className='shadow-box hover-shadow-green cursor-pointer  justify-between border border-[#ECF1EE] rounded-[40px] xl:p-6  p-3 overflow-hidden  flex flex-col  bg-white' key={index}>
                                     <img data-aos="fade-up"
                                         src={item.image}
                                         alt={item.key}
