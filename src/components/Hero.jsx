@@ -12,11 +12,11 @@ const Hero = () => {
   return (
     <div className='herogradient'>
       <Container className={'flex justify-center flex-col'}>
-        <div className='md:pt-[100px] pt-[70px] '>
+        <div className='lg:pt-[100px] pt-[70px] '>
           <Heading className={'mb-[32px]'}>
             {t('heading.maintext')}
           </Heading>
-          <h2 className={'text-center mb-[32px] font-normal sm:text-[24px] text-[18px] leading-[40px] black'}>
+          <h2 className={'text-center mb-[32px] font-normal sm:text-[24px] text-[18px] sm:leading-[40px]  black'}>
             {t('heading.text')}
           </h2>
           <div className='flex items-center justify-center gap-[17.82px] flex-wrap '>

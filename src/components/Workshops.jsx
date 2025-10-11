@@ -21,7 +21,7 @@ const Workshops = () => {
         ['4', '5', '6', '7'].includes(card.id)
     );
     return (
-        <div className='sm:py-[100px] py-[80px]'>
+        <div className='lg:py-[100px] py-[60px]'>
             <Container>
                 <Subsheading className='md:mb-6 mb-4 max-md:text-center' >
                     {t('workshops.title')}

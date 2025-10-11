@@ -63,7 +63,7 @@ const Lass = () => {
   }
 
   return (
-    <div className="sm:py-[100px] py-[80px]">
+    <div className="lg:py-[100px] py-[60px]">
       <Container className="overflow-hidden">
         {/* Heading Section */}
         <Subsheading className="text-center mb-[24px]">
@@ -74,11 +74,11 @@ const Lass = () => {
         </SectionText>
 
         {/* Form Section */}
-        <div className="rounded-[40px] bg-green xl:py-[80px] xl:px-[100px] p-4">
+        <div className="md:rounded-[40px] rounded-[20px] bg-green xl:py-[80px] xl:px-[100px] md:p-8 p-4">
           <div className="flex justify-between xl:gap-[100px] gap-[30px] max-lg:flex-col gap-y-[50px]">
 
             {/* Left - Form */}
-            <div data-aos="zoom-out-up" className="lg:max-w-[821px] w-full bg-[#F9FAFB] rounded-[40px] md:p-[40px] p-4">
+            <div data-aos="zoom-out-up" className="lg:max-w-[821px] w-full bg-[#F9FAFB] md:rounded-[40px] rounded-[20px] md:p-[40px] p-4">
               <form id="contact-form" onSubmit={handleSubmit}>
                 {/* Name */}
                 <Input
@@ -160,7 +160,7 @@ const Lass = () => {
                     {t('message.title')}
                   </label>
                   <textarea
-                    className={`border border-[#FAFAFA] bg-white placeholder-[#454544] rounded-[20px] resize-none h-[166px] py-4 px-3 ${formErrors.send ? 'border-red-500' : 'border-[#E0E0E0]'
+                    className={`border border-[#FAFAFA] bg-white placeholder-[#454544] md:rounded-[20px] rounded-[10px] resize-none md:h-[166px] h-[140px] py-4 px-3 ${formErrors.send ? 'border-red-500' : 'border-[#E0E0E0]'
                       }`}
                     name="send"
                     placeholder={t('message.text')}
@@ -208,7 +208,7 @@ const Lass = () => {
               </div>
 
               {/* Social Links */}
-              <div className="flex gap-[79.5px]">
+              <div className="flex gap-[79.5px] max-lg:mb-[20px]">
                 {Social_Links.map((item, index) => (
                   <div key={index}>
                     <Link to={item.link}>
@@ -222,7 +222,7 @@ const Lass = () => {
               <img data-aos="fade-up"
                 src={flower}
                 alt="flower"
-                className="object-cover absolute lg:bottom-[-80px] lg:right-[-180px] bottom-[-30px] right-[-100px] max-lg:w-[400px] max-md:w-[300px] max-sm:hidden block pointer-events-none"
+                className="object-cover absolute min-[1350px]:bottom-[-80px] min-[1350px]:-right-[100px] bottom-[-90px] right-[-30px] w-[360px] h-[560px] max-sm:hidden block pointer-events-none"
               />
             </div>
           </div>

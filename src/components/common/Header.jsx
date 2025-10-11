@@ -9,7 +9,20 @@ import GreenButton from './GreenButton'
 
 const Header = () => {
     const [state, setIsOpen] = useState(null);
-    const { t, i18n } = useTranslation()
+    const { t, i18n } = useTranslation();
+
+    useEffect(() => {
+        if (state === 'show') {
+            document.body.style.overflow = 'hidden'; // stop scrolling
+        } else {
+            document.body.style.overflow = 'auto'; // allow scrolling again
+        }
+
+        // optional cleanup (in case the component unmounts)
+        return () => {
+            document.body.style.overflow = 'auto';
+        };
+    }, [state]);
 
     const changeLanguage = (lang) => {
         i18n.changeLanguage(lang)
@@ -26,17 +39,17 @@ const Header = () => {
     }, []);
 
     return (
-        <div className={` fixed top-0 z-20 w-full ${scrolled ? 'shadow-lg bg-white' : ''}`}>
+        <div className={`fixed top-0 z-20 w-full  ${scrolled ? 'shadow-lg bg-white' : ''}`}>
             <div className="w-full max-w-[1840px] sm:px-3 px-2 mx-auto flex items-center justify-between py-6">
-                <Link data-aos="fade-down" to="/" className="flex items-center gap-4">
-                    <LogoIcon />
-                    <div className="green max-w-[122px] jakarta font-semibold text-[22px] leading-[120%] whitespace-pre-line sm:block hidden">
+                <Link data-aos="fade-down" to="/" className="flex items-center xl:gap-4 gap-2">
+                    <LogoIcon className={'max-sm:size-[30px]'} />
+                    <div className="green max-w-[122px] jakarta font-semibold xl:text-[22px] text-[20px] xl:leading-[120%] leading-[100%] whitespace-pre-line sm:block hidden">
                         {t('header.logoText')}
                     </div>
                 </Link>
 
-                <nav className={`flex items-center gap-6
-                    max-lg:flex-col max-lg:items-center z-[10] max-lg:justify-center transition-[right] max-lg:fixed max-lg:top-0 duration-800 ease-in-out max-sm:w-full max-lg:w-[75%] max-lg:h-full max-lg:bg-white ${state === 'show' ? 'right-0' :
+                <nav className={`flex items-center xl:gap-6 gap-5
+                    max-lg:flex-col max-lg:items-center z-[10] max-lg:justify-center transition-[right] max-lg:fixed max-lg:top-0 duration-800 ease-in-out max-sm:w-full max-lg:w-[75%] max-lg:h-full max-lg:bg-white ${state === 'show' ? 'right-0 ' :
                         'max-lg:right-[-100%]'}`}>
                     {Navlinks.map((item, index) => (
                         <NavLink
@@ -51,8 +64,8 @@ const Header = () => {
                     ))}
                 </nav>
 
-                <div className="flex items-center sm:gap-6 gap-1">
-                    <div className="flex items-center sm:gap-6 gap-1">
+                <div className="flex items-center sm:gap-6 gap-3">
+                    <div className="flex items-center sm:gap-6 gap-3">
                         <button
                             onClick={() => changeLanguage('en')}
                             className={`sm:font-bold font-medium leading-[100%] cursor-pointer ${i18n.language === 'en' ? 'green' : 'linkgrey'}`}
@@ -66,7 +79,7 @@ const Header = () => {
                             {t('language.de')}
                         </button>
                     </div>
-                    <div className='flex items-center'>
+                    <div className='flex items-center gap-1'>
                         <GreenButton showArrow={false} className={'max-sm:py-3 sm:w-[182px] !h-[52px] max-sm:px-2  '}>
                             {t('header.orderButton')}
                         </GreenButton>

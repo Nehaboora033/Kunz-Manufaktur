@@ -8,7 +8,7 @@ import Text from './Text'
 const Footer = () => {
   const { t } = useTranslation()
   return (
-    <div className='bggreen py-[40px]'>
+    <div className='bggreen py-[40px] !h-[268px]'>
       <div className='text-white max-w-[1865px] mx-auto px-3'>
         <div className='flex flex-wrap gap-[40px]  '>
           <div data-aos="fade-up" className='max-w-[500px] w-full'>

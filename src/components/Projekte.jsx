@@ -11,7 +11,7 @@ import Subsheading from './common/Subsheading'
 const Projekte = () => {
     const { t } = useTranslation();
     return (
-        <div className="sm:py-[100px] py-[80px]">
+        <div className="lg:py-[100px] py-[60px]">
             <Container>
                 <Subsheading className="text-center mb-6">
                     {t('swiper.title')}
@@ -47,7 +47,7 @@ const Projekte = () => {
                             <img
                                 src={item}
                                 alt="images"
-                                className="object-cover rounded-[20px] w-full  h-[500px] md:h-[600px] cursor-pointer transition-transform duration-500 hover:scale-105"
+                                className="object-cover rounded-[20px] w-full  lg:h-[500px] !h-[400px] md:h-[600px] cursor-pointer transition-transform duration-500 hover:scale-105"
                             />
                         </SwiperSlide>
                     ))}
