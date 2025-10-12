@@ -56,8 +56,12 @@ const Header = () => {
                             to={item.link}
                             key={index}
                             className={({ isActive }) =>
-                                `text-base  leading-[20px] transition-colors duration-150 whitespace-nowrap ${isActive ? 'green font-bold' : 'linkgrey font-normal'}`
-                            } onClick={() => setIsOpen(null)}
+                                `relative text-base leading-[20px] transition-all duration-300 whitespace-nowrap 
+     ${isActive ? 'text-green font-bold' : 'linkgrey font-normal hover:text-green'}
+     after:absolute after:left-0 after:-bottom-[3px] after:h-[2px] after:bg-green 
+     after:w-0 hover:after:w-full after:transition-all after:duration-300`
+                            }
+                            onClick={() => setIsOpen(null)}
                         >
                             {t(item.key)}
                         </NavLink>

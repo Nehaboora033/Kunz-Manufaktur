@@ -23,7 +23,7 @@ const Cardsection = () => {
                 <div className='grid md:grid-cols-2 grid-cols-1 md:gap-[40px] gap-[24px]'>
                     {TopCards.map((item, index) => {
                         return (
-                            <div onClick={() => handleCardClick(item.id)} className='shadow-box hover-shadow-green justify-between border cursor-pointer border-[#ECF1EE] rounded-[40px] xl:p-6  p-3 overflow-hidden  flex flex-col  bg-white' key={index}>
+                            <div onClick={() => handleCardClick(item.id)} className='shadow-box hover-shadow-green justify-between border cursor-pointer border-[#ECF1EE] rounded-[40px] xl:p-6  p-3 overflow-hidden  flex flex-col  bg-white transition-all duration-250 ease-in-out' key={index}>
                                 <img data-aos="fade-up"
                                     src={item.image}
                                     alt={item.key}
@@ -52,7 +52,7 @@ const Cardsection = () => {
                     {DownCards.map((item) => (
                         <div
                             key={item.id} onClick={() => handleCardClick(item.id)}
-                            className='shadow-box cursor-pointer hover-shadow-green border border-[#ECF1EE] justify-between rounded-[40px] xl:p-6 p-3 overflow-hidden flex flex-col bg-white'
+                            className='shadow-box cursor-pointer hover-shadow-green border border-[#ECF1EE] justify-between rounded-[40px] xl:p-6 p-3 overflow-hidden flex flex-col bg-white transition-all duration-250 ease-in-out'
                         >
                             <img data-aos="fade-up"
                                 src={item.image}

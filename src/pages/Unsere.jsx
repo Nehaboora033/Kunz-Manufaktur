@@ -1,6 +1,6 @@
 import React from 'react'
 import Cardsection from '../components/Cardsection'
-import Bereit from '../components/Bereit'
+import Bereit from '../components/Bereit.jsx'
 import UnsereFlorean from '../components/UnsereFlorean'
 import { useParams } from 'react-router-dom'
 import { CardsData } from '../utils/helper'

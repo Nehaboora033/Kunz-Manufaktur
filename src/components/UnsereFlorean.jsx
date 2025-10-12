@@ -27,7 +27,7 @@ const Floralen = ({ card }) => {
             <Container>
                 <div className="mx-auto max-w-[1280px] mb-[40px]">
                     <div className='xl:max-w-[415px] w-full mx-auto'>
-                        <Subsheading className={'mb-[24px] text-center '}>
+                        <Subsheading className={'mb-[24px] text-center green'}>
                             {t('unserehero.heading')}
                         </Subsheading>
                     </div>

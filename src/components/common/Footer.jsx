@@ -8,16 +8,16 @@ import Text from './Text'
 const Footer = () => {
   const { t } = useTranslation()
   return (
-    <div className='bggreen py-[40px] !h-[268px]'>
+    <div className='bgdarkgreen py-[40px] xl:!h-[268px]'>
       <div className='text-white max-w-[1865px] mx-auto px-3'>
         <div className='flex flex-wrap gap-[40px]  '>
           <div data-aos="fade-up" className='max-w-[500px] w-full'>
             <Link to={'/'} className='flex gap-4 items-center mb-8'>
-                <FooterLogo />
-                <h3 className='font-semibold text-[22px] leading-[120%] max-w-[122px] '>
-                  Kunz
-                  Manufaktur
-                </h3>
+              <FooterLogo />
+              <h3 className='font-semibold text-[22px] leading-[120%] max-w-[122px] '>
+                Kunz
+                Manufaktur
+              </h3>
             </Link>
 
             <Text>
@@ -32,8 +32,11 @@ const Footer = () => {
               </Text>
               {Footer_Links.map((item, index) => (
                 <div key={index} className='mb-1'>
-                  <Link to={item.link} >
-                    <Text className={'whitespace-nowrap'}>
+                  <Link
+                    to={item.link}
+                    className="hover:underline underline-offset-4 transition-all duration-300"
+                  >
+                    <Text className="whitespace-nowrap">
                       {t(item.key)}
                     </Text>
                   </Link>
@@ -46,20 +49,22 @@ const Footer = () => {
                 {t('linkcontact.title')}
               </Text>
               {Footer_contactInfo.map((item, index) => (
-                <Link className='mb-1' key={index} to={item.href}>
-                  <Text>
-                    {t(item.key)}
-                  </Text>
+                <Link
+                  key={index}
+                  to={item.href}
+                  className="hover:underline underline-offset-4 transition-all duration-300"
+                >
+                  <Text>{t(item.key)}</Text>
                 </Link>
               ))}
             </div>
             {/* opening time */}
             <div className='sm:w-1/3 min-[430px]:w-[46%] w-full '>
-              <Text className='!font-bold  md:mb-[32px] mb-3 whitespace-nowrap'>
+              <Text className='!font-bold  md:mb-[32px] mb-3 whitespace-nowrap '>
                 {t('linkopening.title')}
               </Text>
               {Footer_Info.map((item, index) => (
-                <div className='mb-1' key={index} >
+                <div className='mb-1 hover:underline underline-offset-4 transition-all duration-300' key={index} >
                   <Text>
                     {t(item.key)}
                   </Text>

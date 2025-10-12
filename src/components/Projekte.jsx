@@ -13,7 +13,7 @@ const Projekte = () => {
     return (
         <div className="lg:py-[100px] py-[60px]">
             <Container>
-                <Subsheading className="text-center mb-6">
+                <Subsheading className="text-center mb-6 green">
                     {t('swiper.title')}
                 </Subsheading>
                 <SectionText className={'text-center black mb-[60px]  mx-auto'}>
@@ -44,11 +44,13 @@ const Projekte = () => {
                             className="overflow-hidden flex justify-center"
                             key={index}
                         >
-                            <img
-                                src={item}
-                                alt="images"
-                                className="object-cover rounded-[20px] w-full  lg:h-[500px] !h-[400px] md:h-[600px] cursor-pointer transition-transform duration-500 hover:scale-105"
-                            />
+                            <div className="overflow-hidden rounded-[20px]"> 
+                                <img
+                                    src={item}
+                                    alt="images"
+                                    className="object-cover w-full lg:!h-[666px] !h-[500px] cursor-pointer transition-transform duration-500 hover:scale-105"
+                                />
+                            </div>
                         </SwiperSlide>
                     ))}
                 </Swiper>

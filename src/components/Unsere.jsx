@@ -22,13 +22,13 @@ const Unsere = () => {
     const rightCards = CardsData.filter((card) => card.id === '2' || card.id === '3')
 
     return (
-        <div className='lg:pb-[100px] pb-[60px]'>
+        <div className='lg:pb-[100px] pb-[60px] bg-[#FAFAFA]'>
             <Container className={''}>
                 <div className="grid md:grid-cols-2 grid-cols-1 lg:gap-[60px] gap-[30px] ">
                     {/* Left Section */}
                     <div className='md:max-w-[770.5px] w-full'>
                         <div className='sm:mb-[100px] lg:mb-[60px] mb-[40px]'>
-                            <Subsheading className={'w-full mb-[24px] max-sm:text-center'}>
+                            <Subsheading className={'w-full mb-[24px] max-sm:text-center green'}>
                                 {t('services.title')}
                             </Subsheading>
                             <SectionText className={'mb-6 max-sm:text-center black'}>
@@ -42,11 +42,11 @@ const Unsere = () => {
                         </div>
 
                         {leftCard && (
-                            <div onClick={() => handleCardClick(leftCard.id)} className='shadow-box hover-shadow-green cursor-pointer justify-between border border-[#ECF1EE] rounded-[40px] xl:p-6  p-3 overflow-hidden  flex flex-col  bg-white'>
+                            <div onClick={() => handleCardClick(leftCard.id)} className='shadow-box hover-shadow-green cursor-pointer justify-between border border-[#ECF1EE] rounded-[40px] xl:p-6  p-3 overflow-hidden  flex flex-col  bg-white transition-all duration-250 ease-in-out'>
                                 <img data-aos="fade-up"
                                     src={leftCard.image}
                                     alt={leftCard.key}
-                                    className=' object-cover rounded-[24px] md:mb-[24px] mb-4'
+                                    className=' object-cover rounded-[24px] md:mb-[24px] mb-4 2xl:h-[516px] '
                                 />
                                 <div className='flex flex-col justify-between flex-grow'>
                                     <div>
@@ -67,11 +67,11 @@ const Unsere = () => {
                     <div className='md:max-w-[770.5px] w-full lg:gap-y-[60px] gap-[30px] flex flex-col'>
                         {rightCards.map((item, index) => {
                             return (
-                                <div onClick={() => handleCardClick(item.id)} className='shadow-box hover-shadow-green cursor-pointer  justify-between border border-[#ECF1EE] rounded-[40px] xl:p-6  p-3 overflow-hidden  flex flex-col  bg-white' key={index}>
+                                <div onClick={() => handleCardClick(item.id)} className='shadow-box hover-shadow-green cursor-pointer  justify-between border border-[#ECF1EE] rounded-[40px] xl:p-6  p-3 overflow-hidden  flex flex-col transition-all duration-250 ease-in-out  bg-white' key={index}>
                                     <img data-aos="fade-up"
                                         src={item.image}
                                         alt={item.key}
-                                        className=' object-cover rounded-[24px]  md:mb-[24px] mb-4 '
+                                        className=' object-cover rounded-[24px]  md:mb-[24px] mb-4 2xl:h-[516px]'
                                     />
                                     <div className='flex flex-col justify-between flex-grow'>
                                         <div>

@@ -23,17 +23,17 @@ const Workshops = () => {
     return (
         <div className='lg:py-[100px] py-[60px]'>
             <Container>
-                <Subsheading className='md:mb-6 mb-4 max-md:text-center' >
+                <Subsheading className='md:mb-6 mb-4 max-md:text-center green' >
                     {t('workshops.title')}
                 </Subsheading>
                 <SectionText className='max-w-[1000px] w-full md:mb-[60px] mb-[35px] max-md:text-center black'>
                     {t('workshops.text')}
                 </SectionText>
-                <div className='grid md:grid-cols-2 grid-cols-1 xl:gap-[40px] gap-[24px] cursor-pointer'>
+                <div className='grid md:grid-cols-2 grid-cols-1 xl:gap-x-[40px] xl:gap-y-[60px] gap-[24px] cursor-pointer'>
                     {workshopCards.map((item, index) => (
                         <div
                             key={index} onClick={() => handleCardClick(item.id)}
-                            className='shadow-box hover-shadow-green border border-[#ECF1EE] justify-between rounded-[40px] xl:p-6  p-3 overflow-hidden  flex flex-col  bg-white'>
+                            className='shadow-box hover-shadow-green border border-[#ECF1EE] justify-between rounded-[40px] xl:p-6  p-3 overflow-hidden  flex flex-col  bg-white transition-all duration-250 ease-in-out'>
 
                             <img data-aos="fade-up"
                                 src={item.image}
@@ -44,26 +44,26 @@ const Workshops = () => {
                                 <div>
                                     <SectionText className='!font-semibold md:mb-[24px] mb-4 green whitespace-nowrap'>{t(item.title)} </SectionText>
                                     <Description className='textgrey md:mb-6 mb-4'>{t(item.data)}</Description>
-                                    <div className='md:mb-6 mb-4'>
-                                        <div className='flex items-center gap-2 mb-2'>
+                                    <div className='md:mb-4 mb-2'>
+                                        <div className='flex items-center gap-2 mb-2 2xl:h-[42px]'>
                                             <Dates className='max-sm:size-[25px]' />
                                             <Description className={'textgrey'}>
                                                 {t(item.date)}
                                             </Description>
                                         </div>
-                                        <div className='flex items-center gap-2 mb-2 '>
+                                        <div className='flex items-center gap-2 mb-2 2xl:h-[42px] '>
                                             <Time className='max-sm:size-[25px]' />
                                             <Description className={'textgrey'}>
                                                 {t(item.time)}
                                             </Description>
                                         </div>
-                                        <div className='flex items-center gap-2 mb-2'>
+                                        <div className='flex items-center gap-2 mb-2 2xl:h-[42px]'>
                                             <Location className='max-sm:size-[25px]' />
                                             <Description className={'textgrey'}>
                                                 {t(item.location)}
                                             </Description>
                                         </div>
-                                        <div className='flex items-center gap-2 mb-2'>
+                                        <div className='flex items-center gap-2 mb-2 2xl:h-[42px]'>
                                             <Customer className='max-sm:size-[25px]' />
                                             <Description className={'textgrey'}>
                                                 {t(item.customername)}

@@ -19,10 +19,10 @@ const Bereit = () => {
                         className="absolute inset-y-0 right-[-250px] w-full h-full object-cover object-right opacity-100 pointer-events-none sm:block hidden"
                     />
                     <div className='relative flex z-[10] flex-col items-center justify-center'>
-                        <Subsheading className={'mb-[24px] text-center'}>
+                        <Subsheading className={'mb-[24px] text-center darkgreen'}>
                             {t('journey.title')}
                         </Subsheading>
-                        <Description className={'text-center mb-[24px] max-w-[932px] black'}>
+                        <Description className={'text-center mb-[24px] max-w-[932px] black '}>
                             {t('journey.data')}
                         </Description>
                         <div className='flex items-center justify-center gap-[17.82px] flex-wrap '>

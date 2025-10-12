@@ -37,12 +37,15 @@ const Lass = () => {
     const errors = validate(formValues);
     setFormErrors(errors);
 
-    // Log form values and errors
     console.log('Form Values:', formValues);
     console.log('Validation Errors:', errors);
 
     if (Object.keys(errors).length === 0) {
       console.log('✅ Form submitted successfully!');
+
+      // ✅ Reset form values
+      setFormValues(initialValues);
+      setActiveIndex(0); // optional – reset the selected tab if you want
     } else {
       console.log('❌ Form submission failed due to errors.');
     }
@@ -66,7 +69,7 @@ const Lass = () => {
     <div className="lg:py-[100px] py-[60px]">
       <Container className="overflow-hidden">
         {/* Heading Section */}
-        <Subsheading className="text-center mb-[24px]">
+        <Subsheading className="text-center mb-[24px] green">
           {t('talk.title')}
         </Subsheading>
         <SectionText className="text-center mb-[60px] black">
@@ -137,10 +140,10 @@ const Lass = () => {
                           onClick={() => setActiveIndex(index)}
                           className={`
               px-4 py-[10px] rounded-[50px] transition-all duration-300 whitespace-nowrap
-              font-normal text-[16px] leading-[20px] cursor-pointer
+              font-normal text-[16px] leading-[20px] cursor-pointer border border-[#454544]
               ${isActive
-                              ? 'bggreen text-white border-none'       // Active tab
-                              : 'border border-[#454544] black bg-transparent' // Normal tab
+                              ? 'bggreen text-white  '       // Active tab
+                              : ' black bg-transparent' // Normal tab
                             }
             `}
                         >
@@ -185,35 +188,44 @@ const Lass = () => {
             <div className="lg:max-w-[480px] w-full text-white relative">
               {/* Contact Us */}
               <div className="w-full">
-                <Text className="!font-bold mb-[32px]">
+                <h4 className="font-bold lg:mb-[32px] mb-5 lg:text-[21.33px] text-[20px] leading-[32px] ">
                   {t('linkcontact.title')}
-                </Text>
+                </h4>
                 {Talk_Contact.map((item, index) => (
                   <Link className="mb-1" key={index} to={item.href}>
-                    <Text>{t(item.key)}</Text>
+                    <h4 className='font-normal lg:text-[21.33px] text-[16px] leading-[32px]'>{t(item.key)}</h4>
                   </Link>
                 ))}
               </div>
 
               {/* Opening Times */}
               <div className="w-full py-[40px]">
-                <Text className="!font-bold mb-[32px]">
+                <h4 className="font-bold lg:mb-[32px] mb-5 lg:text-[21.33px] text-[20px] leading-[32px]">
                   {t('linkopening.title')}
-                </Text>
+                </h4>
                 {Footer_Info.map((item, index) => (
                   <div className="mb-1" key={index}>
-                    <Text className="whitespace-nowrap">{t(item.key)}</Text>
+                    <h4 className="whitespace-nowrap font-normal lg:text-[21.33px] text-[16px] leading-[32px]">{t(item.key)}</h4>
                   </div>
                 ))}
               </div>
 
               {/* Social Links */}
-              <div className="flex gap-[79.5px] max-lg:mb-[20px]">
+              <div className="flex gap-[24px] max-lg:mb-[20px]">
                 {Social_Links.map((item, index) => (
-                  <div key={index}>
-                    <Link to={item.link}>
+                  <div
+                    key={index}
+                    className="transition-transform duration-300 hover:-translate-y-2 p-[26.5px]"
+                  >
+
+                    <Link
+                      to={item.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <item.icon />
                     </Link>
+
                   </div>
                 ))}
               </div>

@@ -14,12 +14,21 @@
 @theme {
     --color-green: #3E7651;
     --color-textgrey: #454544;
+    --color-darkgreen: #325E41;
     --color-linkgrey: #A7A69A;
     --color-black: #111111;
     --shadow-card: 0px 165px 99px 0px #ACADAA0D;
     --gradient-hero: linear-gradient(180deg, #ECF1EE 0%, #FAFAFA 131.85%);
     --gradinet-box: linear-gradient(90deg, #ECF1EE -17.27%, #FAFAFA 100%);
     --shadow-box: 0px 293px 117px #ACADAA03, 0px 165px 99px #ACADAA0D, 0px 458px 128px 0px #ACADAA00;
+}
+
+.darkgreen {
+    color: var(--color-darkgreen);
+}
+
+.bgdarkgreen {
+    background-color: var(--color-darkgreen);
 }
 
 .black {
@@ -90,4 +99,33 @@
     .margin-custom-300 {
         margin-top: 300px;
     }
+}
+
+
+/* ===== Custom Green Scrollbar ===== */
+::-webkit-scrollbar {
+    width: 8px;
+    /* width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    /* light background behind scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #325E41;
+    /* your green color */
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #325E41;
+    /* darker green on hover */
+}
+
+/* Optional: make it look good on Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #325E41 #f1f1f1;
 }
