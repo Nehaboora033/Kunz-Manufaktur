@@ -12,7 +12,7 @@ const Bereit = () => {
         <div className='lg:py-[80px] py-[60px]'>
             <Container className={''}>
 
-                <div className='w-full sm:rounded-[40px] rounded-[20px] sm:py-[87px] py-[40px] md:px-[30px] px-3 bg-[#EFF3F1] border border-[#ECF1EE] bg-no-repeat  overflow-hidden bg-cover shadow-box relative after:rounded-[40px] after:content-[" "] after:absolute  after:z-0  after-img ' >
+                <div className='w-full md:rounded-[40px] rounded-[20px] sm:py-[87px] py-[40px] md:px-[30px] px-3 bgberit border border-[#ECF1EE] bg-no-repeat  overflow-hidden bg-cover shadow-box relative after:rounded-[40px] after:content-[" "] after:absolute  after:z-0  after-img ' >
                     <img
                         src={flower}
                         alt="Floral background visual"

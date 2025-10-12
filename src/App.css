@@ -17,10 +17,15 @@
     --color-darkgreen: #325E41;
     --color-linkgrey: #A7A69A;
     --color-black: #111111;
+    --color-berit: #EFF3F1;
     --shadow-card: 0px 165px 99px 0px #ACADAA0D;
     --gradient-hero: linear-gradient(180deg, #ECF1EE 0%, #FAFAFA 131.85%);
     --gradinet-box: linear-gradient(90deg, #ECF1EE -17.27%, #FAFAFA 100%);
     --shadow-box: 0px 293px 117px #ACADAA03, 0px 165px 99px #ACADAA0D, 0px 458px 128px 0px #ACADAA00;
+}
+
+.bgberit {
+    background-color: var(--color-berit);
 }
 
 .darkgreen {

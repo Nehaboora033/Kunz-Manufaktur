@@ -21,7 +21,7 @@ const Projekte = () => {
                 </SectionText>
             </Container>
 
-            <div className="xl:ml-[160px] max-lg:px-3 max-xl:px-3">
+            <div className="xl:ml-[160px] max-sm:px-3">
                 <Swiper
                     spaceBetween={24}
                     modules={[Autoplay]}
@@ -48,7 +48,7 @@ const Projekte = () => {
                                 <img
                                     src={item}
                                     alt="images"
-                                    className="object-cover w-full lg:!h-[666px] !h-[500px] cursor-pointer transition-transform duration-500 hover:scale-105"
+                                    className="object-cover w-full lg:!h-[666px] md:!h-[500px] !h-[350px] cursor-pointer transition-transform duration-500 hover:scale-105"
                                 />
                             </div>
                         </SwiperSlide>

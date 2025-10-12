@@ -20,10 +20,10 @@ const Hero = () => {
             {t('heading.text')}
           </h2>
           <div className='flex items-center justify-center gap-[17.82px] flex-wrap '>
-            <GreenButton>
+            <GreenButton className={'lg:!pr-[27px]'}>
               {t('hero.buttontext1')}
             </GreenButton>
-            <TransparentButton>
+            <TransparentButton className={'lg:!pr-[27px]'}>
               {t('hero.buttontext2')}
             </TransparentButton>
           </div>
