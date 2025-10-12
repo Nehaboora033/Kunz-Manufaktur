@@ -19,10 +19,29 @@
     --color-black: #111111;
     --color-white: #ffffff;
     --color-berit: #EFF3F1;
+    --color-lass: #F9FAFB;
+    --color-red: #fb2c36;
+    --color-florean: #FAFAFA;
     --shadow-card: 0px 165px 99px 0px #ACADAA0D;
     --gradient-hero: linear-gradient(180deg, #ECF1EE 0%, #FAFAFA 131.85%);
     --gradinet-box: linear-gradient(90deg, #ECF1EE -17.27%, #FAFAFA 100%);
     --shadow-box: 0px 293px 117px #ACADAA03, 0px 165px 99px #ACADAA0D, 0px 458px 128px 0px #ACADAA00;
+}
+
+.red {
+    color: var(--color-red);
+}
+
+.black {
+    color: black;
+}
+
+.bgflorean {
+    background-color: var(--color-florean);
+}
+
+.bglass {
+    background-color: var(--color-lass);
 }
 
 .bgberit {
@@ -116,10 +135,12 @@
     background: #325E41;
     /* your green color */
     border-radius: 10px;
+
 }
 
 ::-webkit-scrollbar-thumb:hover {
     background: #325E41;
+
     /* darker green on hover */
 }
 
@@ -127,4 +148,20 @@
 * {
     scrollbar-width: thin;
     scrollbar-color: #325E41 #f1f1f1;
+}
+
+.hide-scrollbar {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari, Opera */
+}
+
+.scroll-smooth {
+    scroll-behavior: smooth;
 }

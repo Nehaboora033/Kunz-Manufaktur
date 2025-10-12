@@ -22,7 +22,7 @@ const Unsere = () => {
     const rightCards = CardsData.filter((card) => card.id === '2' || card.id === '3')
 
     return (
-        <div className='lg:pb-[100px] pb-[60px] bg-[#FAFAFA] md:pt-[300px] min-[450px]:pt-[250px] pt-[150px]'>
+        <div className='lg:pb-[100px] pb-[60px] bgflorean md:pt-[300px] min-[450px]:pt-[250px] pt-[150px]'>
             <Container className={''}>
                 <div className="grid md:grid-cols-2 grid-cols-1 lg:gap-[60px] gap-[30px] ">
                     {/* Left Section */}
@@ -42,7 +42,7 @@ const Unsere = () => {
                         </div>
 
                         {leftCard && (
-                            <div onClick={() => handleCardClick(leftCard.id)} className='shadow-box hover-shadow-green cursor-pointer justify-between border border-[#ECF1EE] rounded-[40px] xl:p-6  p-3 overflow-hidden  flex flex-col  bg-white transition-all duration-250 ease-in-out'>
+                            <div onClick={() => handleCardClick(leftCard.id)} className='shadow-box hover-shadow-green cursor-pointer justify-between border border-[#ECF1EE] rounded-[40px] xl:p-6  p-3 overflow-hidden  flex flex-col  bgwhite transition-all duration-250 ease-in-out'>
                                 <img data-aos="fade-up"
                                     src={leftCard.image}
                                     alt={leftCard.key}
@@ -67,7 +67,7 @@ const Unsere = () => {
                     <div className='md:max-w-[770.5px] w-full lg:gap-y-[60px] gap-[30px] flex flex-col'>
                         {rightCards.map((item, index) => {
                             return (
-                                <div onClick={() => handleCardClick(item.id)} className='shadow-box hover-shadow-green cursor-pointer  justify-between border border-[#ECF1EE] rounded-[40px] xl:p-6  p-3 overflow-hidden  flex flex-col transition-all duration-250 ease-in-out  bg-white' key={index}>
+                                <div onClick={() => handleCardClick(item.id)} className='shadow-box hover-shadow-green cursor-pointer  justify-between border border-[#ECF1EE] rounded-[40px] xl:p-6  p-3 overflow-hidden  flex flex-col transition-all duration-250 ease-in-out  bgwhite' key={index}>
                                     <img data-aos="fade-up"
                                         src={item.image}
                                         alt={item.key}

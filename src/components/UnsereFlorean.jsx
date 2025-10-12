@@ -12,7 +12,7 @@ const Floralen = ({ card }) => {
 
     if (!card) {
         return (
-            <div className="pt-[100px] bg-[#FAFAFA]">
+            <div className="pt-[100px] bgflorean">
                 <Container>
                     <p className="text-center text-gray-500">
                         Keine Kartendaten gefunden.
@@ -23,7 +23,7 @@ const Floralen = ({ card }) => {
     }
     const Icon = card.icon
     return (
-        <div className="sm:pt-[100px] pt-[80px] bg-[#FAFAFA]">
+        <div className="sm:pt-[100px] pt-[80px] bgflorean">
             <Container>
                 <div className="mx-auto max-w-[1280px] mb-[40px]">
                     <div className='xl:max-w-[415px] w-full mx-auto'>

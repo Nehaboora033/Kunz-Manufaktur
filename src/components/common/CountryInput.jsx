@@ -32,7 +32,7 @@ const CountryInput = ({ label, value, error, onChange, name }) => {
                 }}
             />
 
-            {error && <p className="text-red-500 text-sm mt-1">{error}</p>}
+            {error && <p className="red text-sm mt-1">{error}</p>}
         </div>
     )
 }

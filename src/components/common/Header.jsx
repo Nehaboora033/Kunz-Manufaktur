@@ -39,7 +39,7 @@ const Header = () => {
     }, []);
 
     return (
-        <div className={`fixed top-0 z-20 w-full  ${scrolled ? 'shadow-lg bg-white' : ''}`}>
+        <div className={`fixed top-0 z-20 w-full  ${scrolled ? 'shadow-lg bgwhite' : ''}`}>
             <div className="w-full max-w-[1840px] sm:px-3 px-2 mx-auto flex items-center justify-between py-6">
                 <Link data-aos="fade-down" to="/" className="flex items-center xl:gap-4 gap-2">
                     <LogoIcon className={'max-sm:size-[30px]'} />
@@ -57,7 +57,7 @@ const Header = () => {
                             key={index}
                             className={({ isActive }) =>
                                 `relative text-base leading-[20px] transition-all duration-300 whitespace-nowrap 
-     ${isActive ? 'text-green font-bold' : 'linkgrey font-normal hover:text-green'}
+     ${isActive ? 'green font-bold' : 'linkgrey font-normal hover:text-green'}
      after:absolute after:left-0 after:-bottom-[3px] after:h-[2px] after:bg-green 
      after:w-0 hover:after:w-full after:transition-all after:duration-300`
                             }

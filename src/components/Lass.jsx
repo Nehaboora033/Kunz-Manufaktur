@@ -4,7 +4,6 @@ import { useTranslation } from 'react-i18next'
 import SectionText from './common/SectionText'
 import { Footer_Info, Social_Links, Tabs, Talk_Contact } from '../utils/helper'
 import { Link } from 'react-router-dom'
-import Text from './common/Text'
 import flower from '../assets/webp/whiteflower.webp'
 import Input from './common/Input'
 import CountryInput from './common/CountryInput'
@@ -77,11 +76,11 @@ const Lass = () => {
         </SectionText>
 
         {/* Form Section */}
-        <div className="md:rounded-[40px] rounded-[20px] bg-green xl:py-[80px] xl:px-[100px] md:p-8 p-4">
+        <div className="md:rounded-[40px] rounded-[20px] bggreen xl:py-[80px] xl:px-[100px] md:p-8 p-4">
           <div className="flex justify-between xl:gap-[100px] gap-[30px] max-lg:flex-col gap-y-[50px]">
 
             {/* Left - Form */}
-            <div data-aos="zoom-out-up" className="lg:max-w-[821px] w-full bg-[#F9FAFB] md:rounded-[40px] rounded-[20px] md:p-[40px] p-4">
+            <div data-aos="zoom-out-up" className="lg:max-w-[821px] w-full bglass md:rounded-[40px] rounded-[20px] md:p-[40px] p-4">
               <form id="contact-form" onSubmit={handleSubmit}>
                 {/* Name */}
                 <Input
@@ -126,7 +125,7 @@ const Lass = () => {
                     className="
                       flex gap-2 sm:gap-4
                       overflow-x-auto sm:overflow-visible
-                      flex-nowrap sm:flex-wrap
+                      flex-nowrap sm:flex-wrap  scroll-smooth
                       hide-scrollbar
                       [-webkit-overflow-scrolling:touch]
                     "
@@ -142,7 +141,7 @@ const Lass = () => {
               px-4 py-[10px] rounded-[50px] transition-all duration-300 whitespace-nowrap
               font-normal text-[16px] leading-[20px] cursor-pointer border border-[#454544]
               ${isActive
-                              ? 'bggreen text-white  '       // Active tab
+                              ? 'bggreen white '       // Active tab
                               : ' black bg-transparent' // Normal tab
                             }
             `}
@@ -163,7 +162,7 @@ const Lass = () => {
                     {t('message.title')}
                   </label>
                   <textarea
-                    className={`border border-[#FAFAFA] bg-white placeholder-[#454544] md:rounded-[20px] rounded-[10px] resize-none md:h-[166px] h-[140px] py-4 px-3 ${formErrors.send ? 'border-red-500' : 'border-[#E0E0E0]'
+                    className={`border border-[#FAFAFA] bgwhite placeholder-[#454544] md:rounded-[20px] rounded-[10px] resize-none md:h-[166px] h-[140px] py-4 px-3 ${formErrors.send ? 'border-red-500' : 'border-[#E0E0E0]'
                       }`}
                     name="send"
                     placeholder={t('message.text')}
@@ -185,7 +184,7 @@ const Lass = () => {
             </div>
 
             {/* Right - Contact Info */}
-            <div className="lg:max-w-[480px] w-full text-white relative">
+            <div className="lg:max-w-[480px] w-full white relative">
               {/* Contact Us */}
               <div className="w-full">
                 <h4 className="font-bold lg:mb-[32px] mb-5 lg:text-[21.33px] text-[20px] leading-[32px] ">
