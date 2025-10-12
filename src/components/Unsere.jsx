@@ -22,7 +22,7 @@ const Unsere = () => {
     const rightCards = CardsData.filter((card) => card.id === '2' || card.id === '3')
 
     return (
-        <div className='lg:pb-[100px] pb-[60px] bg-[#FAFAFA]'>
+        <div className='lg:pb-[100px] pb-[60px] bg-[#FAFAFA] md:pt-[300px] min-[450px]:pt-[250px] pt-[150px]'>
             <Container className={''}>
                 <div className="grid md:grid-cols-2 grid-cols-1 lg:gap-[60px] gap-[30px] ">
                     {/* Left Section */}

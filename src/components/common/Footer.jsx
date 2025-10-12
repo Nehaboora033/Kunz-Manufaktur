@@ -10,7 +10,7 @@ const Footer = () => {
   return (
     <div className='bgdarkgreen py-[40px] xl:!h-[268px]'>
       <div className='text-white max-w-[1865px] mx-auto px-3'>
-        <div className='flex flex-wrap gap-[40px]  '>
+        <div className='flex min-[1140px]:flex-row flex-col gap-[40px]  '>
           <div data-aos="fade-up" className='max-w-[500px] w-full'>
             <Link to={'/'} className='flex gap-4 items-center mb-8'>
               <FooterLogo />
@@ -65,7 +65,7 @@ const Footer = () => {
               </Text>
               {Footer_Info.map((item, index) => (
                 <div className='mb-1 hover:underline underline-offset-4 transition-all duration-300' key={index} >
-                  <Text>
+                  <Text className={'whitespace-nowrap'}>
                     {t(item.key)}
                   </Text>
                 </div>

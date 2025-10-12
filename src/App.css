@@ -17,6 +17,7 @@
     --color-darkgreen: #325E41;
     --color-linkgrey: #A7A69A;
     --color-black: #111111;
+    --color-white: #ffffff;
     --color-berit: #EFF3F1;
     --shadow-card: 0px 165px 99px 0px #ACADAA0D;
     --gradient-hero: linear-gradient(180deg, #ECF1EE 0%, #FAFAFA 131.85%);
@@ -26,6 +27,14 @@
 
 .bgberit {
     background-color: var(--color-berit);
+}
+
+.bgwhite {
+    background-color: var(--color-white);
+}
+
+.white {
+    color: var(--color-white);
 }
 
 .darkgreen {
@@ -91,21 +100,6 @@
 .hover-transparent:hover {
     background: transparent !important;
 }
-
-
-@media (min-width: 1024px) and (max-width: 1235px) {
-    .margin-custom {
-        margin-top: 0;
-    }
-}
-
-
-@media (min-width: 425px) and (max-width: 640px) {
-    .margin-custom-300 {
-        margin-top: 300px;
-    }
-}
-
 
 /* ===== Custom Green Scrollbar ===== */
 ::-webkit-scrollbar {

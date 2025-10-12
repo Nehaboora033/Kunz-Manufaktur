@@ -33,7 +33,7 @@ const Workshops = () => {
                     {workshopCards.map((item, index) => (
                         <div
                             key={index} onClick={() => handleCardClick(item.id)}
-                            className='shadow-box hover-shadow-green border border-[#ECF1EE] justify-between rounded-[40px] xl:p-6  p-3 overflow-hidden  flex flex-col  bg-white transition-all duration-250 ease-in-out'>
+                            className='shadow-box hover-shadow-green border border-[#ECF1EE] justify-between rounded-[40px] xl:p-6  p-3 overflow-hidden  flex flex-col  bgwhite transition-all duration-250 ease-in-out'>
 
                             <img data-aos="fade-up"
                                 src={item.image}

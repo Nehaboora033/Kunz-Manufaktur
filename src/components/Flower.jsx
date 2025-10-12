@@ -3,13 +3,19 @@ import flower from '../assets/webp/flowerhero.webp'
 
 const Flower = () => {
     return (
-        <div className='2xl:mt-[200px] xl:mt-[180px]  lg:mt-[170px] margin-custom md:mt-[160px] sm:mt-[300px] margin-custom-300 mt-[180px] '>
-            <img src={flower} alt="flower" className='object-cover size-[661px] block mx-auto  ' />
-        </div>
+        <>
+            <div className="flex justify-center items-center w-full h-fit absolute -translate-y-[50%] px-3">
+                <img
+                    src={flower}
+                    alt="flower"
+                    className="object-cover sm:size-[661px] min-[450px]:size-[500px] size-[340px]"
+                />
+            </div>
+        </>
+
     )
 }
 
 export default Flower
 
 
-    

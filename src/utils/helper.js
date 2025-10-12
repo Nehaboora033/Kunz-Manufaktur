@@ -8,7 +8,6 @@ import image6 from '../assets/webp/cardimage6.webp'
 import image7 from '../assets/webp/cardimage7.webp'
 import image8 from '../assets/webp/cardimage8.webp'
 import image9 from '../assets/webp/cardimage9.webp'
-
 import swiperimg1 from '../assets/webp/swiperimg1.webp'
 import swiperimg2 from '../assets/webp/swiperimg2 .webp'
 import swiperimg3 from '../assets/webp/swiperimg3.webp'
